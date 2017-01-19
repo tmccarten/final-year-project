@@ -5,6 +5,7 @@ $pageDescription = "Official website of Liverpool, Pembroke & Sefton Harriers & 
 $pageAuthor = "Thomas McCarten";
 
 include ('/assets/includes/head.php');
+include ('/assets/includes/header.php');
 
 ?>
 
