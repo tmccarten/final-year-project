@@ -9,5 +9,9 @@ include ('/assets/includes/header.php');
 
 ?>
 
+
 </body>
+
+<script src="/assets/js/script.js"></script>
+
 </html>

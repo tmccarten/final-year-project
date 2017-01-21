@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 1400px;
+	width: 100%;
+	padding: 0 3%;
+	display: inherit;
+}
+
+/* --- HEADER --- */
+
+.header-container {
+	width: 100%;
+}
+
+header {
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 1400px;
+	width: 100%;
+	padding: 0 3%;
+	color: white;
+	background-color: red;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+header h1 {
+	-ms-flex: 1;
+	flex: 1;
+	font-family: 'Montserrat', 'arial', sans-serif;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin: 0;
+	padding: 1em 0;
+	text-align: center;
+}
+
+header h1 span {
+	display: none;
+	font-weight: normal;
+}
+
+header nav {
+	max-height: 0;
+	transition: max-height 300ms ease-in-out;
+}
+
+header ul {
+	width: 100%;
+	font-family: 'Lato';
+	list-style-type: none;
+	text-align: center;
+	margin: 2em 0;
+	padding: 0;
+}
+
+header ul li + * {
+	margin-top: 2em;
+}
+
+header .menu-displayed {
+	max-height: 100vh;
+	transition: max-height 300ms ease-in-out;
+}
+
+header .menu-icon {
+	margin-bottom: 1em;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+
+/* --- HEADER ENDS --- */
+

@@ -32,7 +32,10 @@ gulp.task('mmq', ['sass'], function () {
     .pipe(mmq({
       log: true
     }))
-    .pipe(gulp.dest('assets/css'));
+    .pipe(gulp.dest('assets/css'))
+    .pipe(browserSync.reload({
+      stream: true
+}));
 });
 
 gulp.task('watch', ['connect-sync', 'sass', 'mmq'], function(){
