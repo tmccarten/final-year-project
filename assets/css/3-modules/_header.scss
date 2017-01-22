@@ -2,6 +2,7 @@
 
 .header-container {
   position: fixed;
+  top: 0;
   width: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7101d+0,aa111c+100 */
   background: #c7101d; /* Old browsers */
@@ -22,7 +23,8 @@ header {
     flex: 1;
     font-family: 'Montserrat', 'arial', sans-serif;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: calc(100% + 0.5vw);
+    font-size: -webkit-calc(16px + 0.5vw);
     margin: 0;
     padding: 1em 0;
     text-align: left;
@@ -33,7 +35,9 @@ header {
 
     span.tagline {
       display: none;
-      font-weight: normal;
+      font-size: 0.8em;
+      font-family: 'Raleway', 'arial', sans-serif;
+      font-weight: 500;
     }
   }
 
@@ -46,7 +50,7 @@ header {
 .nav-container {
   width: 100%;
   background-color: $maincolour;
-  padding-top: 68px;
+  margin-top: 0px;
 }
 
 nav {
@@ -76,9 +80,21 @@ nav {
 
 .menu-displayed {
   display: block;
-  height: 100vh;
-  transition: height 300ms ease-in-out;
+  height: 80vh;
+  transition: height 250ms ease-in-out;
 }
 
-
 /* -- NAVIGATION ENDS -- */
+
+@media screen and (min-width: 400px) {
+  header {
+    h1 {
+      span {
+        display: inline;
+      }
+      span.tagline {
+        display: block;
+      }
+    }
+  }
+}
