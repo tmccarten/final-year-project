@@ -2,36 +2,30 @@
 	box-sizing: border-box;
 }
 
-.wrapper {
+.site-wrapper {
 	max-width: 1400px;
+	margin: 0 auto;
 	width: 100%;
 	padding: 0 3%;
-	display: inherit;
 }
 
 /* --- HEADER --- */
 
 .header-container {
-	width: 100%;
+	position: fixed;
+	width: 100%; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7101d+0,aa111c+100 */
+	background: #c7101d; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #c7101d 0%, #aa111c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7101d', endColorstr='#aa111c',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0px 4px 3px -3px rgba(0, 0, 0, 0.3);
 }
 
 header {
 	display: -ms-flexbox;
 	display: flex;
-	max-width: 1400px;
-	width: 100%;
-	padding: 0 3%;
 	color: white;
-	background-color: red;
-	-ms-flex-line-pack: center;
-	align-content: center;
-	-ms-flex-direction: column;
-	flex-direction: column;
-}
-
-header a {
-	color: white;
-	text-decoration: none;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 header h1 {
@@ -42,20 +36,40 @@ header h1 {
 	font-size: 1em;
 	margin: 0;
 	padding: 1em 0;
-	text-align: center;
+	text-align: left;
 }
 
 header h1 span {
+	display: block;
+}
+
+header h1 span.tagline {
 	display: none;
 	font-weight: normal;
 }
 
-header nav {
-	max-height: 0;
-	transition: max-height 300ms ease-in-out;
+/* --- HEADER ENDS --- */
+
+/* -- NAVIGATION -- */
+
+.nav-container {
+	width: 100%;
+	background-color: #c7101d;
+	padding-top: 68px;
 }
 
-header ul {
+nav {
+	height: 0;
+	overflow: hidden;
+	transition: height 300ms ease-in-out;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav ul {
 	width: 100%;
 	font-family: 'Lato';
 	list-style-type: none;
@@ -64,20 +78,15 @@ header ul {
 	padding: 0;
 }
 
-header ul li + * {
+nav ul li + * {
 	margin-top: 2em;
 }
 
-header .menu-displayed {
-	max-height: 100vh;
-	transition: max-height 300ms ease-in-out;
+.menu-displayed {
+	display: block;
+	height: 100vh;
+	transition: height 300ms ease-in-out;
 }
 
-header .menu-icon {
-	margin-bottom: 1em;
-	-ms-flex-item-align: end;
-	align-self: flex-end;
-}
-
-/* --- HEADER ENDS --- */
+/* -- NAVIGATION ENDS -- */
 

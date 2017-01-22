@@ -1,3 +1,5 @@
+// Function to show the nav menu on icon click
+
 var menuIcon = document.querySelector('.menu-icon');
 var nav = document.querySelector('nav');
 

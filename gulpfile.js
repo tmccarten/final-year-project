@@ -13,10 +13,7 @@ gulp.task('sass', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-    .pipe(gulp.dest('assets/css'))
-    .pipe(browserSync.reload({
-      stream: true
-}));
+    .pipe(gulp.dest('assets/css'));    
 });
 
 gulp.task('connect-sync', function() {
@@ -39,8 +36,8 @@ gulp.task('mmq', ['sass'], function () {
 });
 
 gulp.task('watch', ['connect-sync', 'sass', 'mmq'], function(){
-  gulp.watch('assets/css/**/*.scss', ['sass', 'mmq']);
-  gulp.watch('**/*.php', browserSync.reload);
-  gulp.watch('assets/js/**/*.js', browserSync.reload);
+ gulp.watch('assets/css/**/*.scss', ['sass', 'mmq']);
+ gulp.watch('**/*.php', browserSync.reload);
+ gulp.watch('assets/js/**/*.js', browserSync.reload);
   // Other watchers
 });

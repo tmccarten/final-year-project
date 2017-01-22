@@ -1,70 +1,84 @@
 /* --- HEADER --- */
 
 .header-container {
+  position: fixed;
   width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7101d+0,aa111c+100 */
+  background: #c7101d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #c7101d 0%, #aa111c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #c7101d 0%,#aa111c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #c7101d 0%,#aa111c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7101d', endColorstr='#aa111c',GradientType=0 ); /* IE6-9 */
+  box-shadow: 0px 4px 3px -3px rgba(0,0,0,0.3);
+
 }
 
 header {
   display: flex;
-  max-width: 1400px;
-  width: 100%;
-  padding: 0 3%;
   color: white;
-  background-color: red;
-  align-content: center;
-  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    flex: 1;
+    font-family: 'Montserrat', 'arial', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 0;
+    padding: 1em 0;
+    text-align: left;
+
+    span {
+      display: block;
+    }
+
+    span.tagline {
+      display: none;
+      font-weight: normal;
+    }
+  }
+
+}
+
+/* --- HEADER ENDS --- */
+
+/* -- NAVIGATION -- */
+
+.nav-container {
+  width: 100%;
+  background-color: $maincolour;
+  padding-top: 68px;
+}
+
+nav {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms ease-in-out;
 
   a {
     color: white;
     text-decoration: none;
   }
 
+  ul {
+    width: 100%;
+    font-family: 'Lato';
+    list-style-type: none;
+    text-align: center;
+    margin: 2em 0;
+    padding: 0;
 
-h1 {
-  flex: 1;
-  font-family: 'Montserrat', 'arial', sans-serif;
-  text-transform: uppercase;
-  font-size: 1em;
-  margin: 0;
-  padding: 1em 0;
-  text-align: center;
-
-  span {
-    display: none;
-    font-weight: normal;
+    li + * {
+      margin-top: 2em;
+    }
   }
-}
 
-nav {
-  max-height: 0;
-  transition: max-height 300ms ease-in-out;
-  //background-color: white;
-}
-
-ul {
-  width: 100%;
-  font-family: 'Lato';
-  list-style-type: none;
-  text-align: center;
-  margin: 2em 0;
-  padding: 0;
-
-li + * {
-  margin-top: 2em;
-}
 }
 
 .menu-displayed {
-  max-height: 100vh;
-  transition: max-height 300ms ease-in-out;
+  display: block;
+  height: 100vh;
+  transition: height 300ms ease-in-out;
 }
 
 
-.menu-icon {
-  margin-bottom: 1em;
-  align-self: flex-end;
-}
-
-}
-
-/* --- HEADER ENDS --- */
+/* -- NAVIGATION ENDS -- */
