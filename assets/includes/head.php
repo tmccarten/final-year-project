@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">  
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>

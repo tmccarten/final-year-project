@@ -23,8 +23,8 @@ header {
     flex: 1;
     font-family: 'Montserrat', 'arial', sans-serif;
     text-transform: uppercase;
-    font-size: calc(100% + 0.5vw);
-    font-size: -webkit-calc(16px + 0.5vw);
+    font-size: calc(0.875rem + 0.5vw);
+    //font-size: -webkit-calc(100% + 0.5vw);
     margin: 0;
     padding: 1em 0;
     text-align: left;
@@ -50,17 +50,38 @@ header {
 .nav-container {
   width: 100%;
   background-color: $maincolour;
-  margin-top: 0px;
 }
 
 nav {
+  font-family: 'Raleway', 'arial', sans-serif;
   height: 0;
   overflow: hidden;
   transition: height 300ms ease-in-out;
+  font-size: 1.125rem;
+  font-weight: 500;
+  box-shadow: 0px 4px 3px -3px rgba(0,0,0,0.3);
 
   a {
+    font-family: 'Raleway', 'arial', sans-serif;
     color: white;
     text-decoration: none;
+  }
+
+  a.menu-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  a.menu-parent:after {
+    display: block;
+    content: ' ';
+    background-image: url('/assets/img/icons/menu-parent-icon.svg');
+    background-size: 0.75em 0.75em;
+    height: 0.75em;
+    width: 0.75em;
+    margin-left: 0.375em;
   }
 
   ul {
@@ -78,15 +99,30 @@ nav {
 
 }
 
+.submenu {
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: height 300ms ease-in-out;
+}
+
 .menu-displayed {
   display: block;
   height: 80vh;
   transition: height 250ms ease-in-out;
 }
 
+.menu-displayed.submenu {
+  visibility: visible;
+  margin-top: 2em;
+  height: 7.375em;
+  transition: height 200ms ease-out;
+}
+
 /* -- NAVIGATION ENDS -- */
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 360px) {
   header {
     h1 {
       span {
