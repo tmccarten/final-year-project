@@ -61,12 +61,12 @@ header h1 span.tagline {
 
 .nav-container {
 	width: 100%;
-	background-color: #c7101d;
+	background-color: #ed1d2c;
 }
 
 nav {
 	font-family: 'Raleway', 'arial', sans-serif;
-	height: 0;
+	max-height: 0;
 	overflow: hidden;
 	transition: height 300ms ease-in-out;
 	font-size: 1.125rem;
@@ -77,7 +77,6 @@ nav {
 nav a {
 	font-family: 'Raleway', 'arial', sans-serif;
 	color: white;
-	text-decoration: none;
 }
 
 nav a.menu-parent {
@@ -87,6 +86,7 @@ nav a.menu-parent {
 	align-items: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	text-decoration: none;
 }
 
 nav a.menu-parent:after {
@@ -122,15 +122,19 @@ nav ul li + * {
 
 .menu-displayed {
 	display: block;
-	height: 80vh;
-	transition: height 250ms ease-in-out;
+	max-height: 120vh;
+	transition: max-height 250ms ease-in-out;
 }
 
-.menu-displayed.submenu {
+.submenu.menu-displayed {
 	visibility: visible;
 	margin-top: 2em;
-	height: 7.375em;
+	height: 7.5em;
 	transition: height 200ms ease-out;
+}
+
+.submenu.member.menu-displayed {
+	height: 4.3333333333333333333333333333333em;
 }
 
 /* -- NAVIGATION ENDS -- */

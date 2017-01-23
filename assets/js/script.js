@@ -1,32 +1,10 @@
 
-var menuIcon = document.querySelector('.menu-icon');
+var menu = document.querySelector('.menu-parent.menu');
 var nav = document.querySelector('nav');
-
-// Function to show the nav menu on menu icon click
-menuIcon.addEventListener('click', function() {
-  if (nav.className === "menu-displayed") {
-  nav.className = "menu-not-displayed";
-}
-  else {
-    nav.className = "menu-displayed";
-    headerHeight();
-  }
-});
-
-var menuParent = document.querySelector('.menu-parent');
-var subMenu = document.querySelector('.submenu');
-
-menuParent.addEventListener('click', function() {
-  if (subMenu.className === "submenu menu-displayed") {
-    subMenu.className = "submenu menu-not-displayed";
-  }
-  else {
-    subMenu.className = "submenu menu-displayed";
-  }
-});
-
-// Runs function
-headerHeight();
+var menuParentAbout = document.querySelector('.menu-parent.about');
+var menuParentMember = document.querySelector('.menu-parent.member');
+var subMenuAbout = document.querySelector('.submenu.about');
+var subMenuMember = document.querySelector('.submenu.member');
 
 // Runs function on browser resize
 window.addEventListener('resize', headerHeight);
@@ -38,9 +16,35 @@ function headerHeight() {
   var navContainer = document.querySelector('.nav-container');
   var headerContainerHeight = headerContainer.offsetHeight;
 
-  if (nav.className === "menu-not-displayed") {
+  if (!nav.classList.contains('menu-displayed')) {
   navContainer.style.paddingTop = 0 + "px"; // removes the padding from nav when not in 'mobile' form
 } else {
   navContainer.style.paddingTop = headerContainerHeight + "px";
 }
 }
+
+
+// Function to toggle menus on and off by adding/removing the menu-displayed class
+function menuToggle(varName) {
+  if (!varName.classList.contains('menu-displayed')) {
+    varName.classList.add('menu-displayed');
+  } else {
+    varName.classList.remove('menu-displayed');
+  }
+}
+
+// Mobile menu toggle, also runs header height function
+menu.addEventListener('click', function() {
+  menuToggle(nav);
+  headerHeight();
+});
+
+// Toggles About Us menu
+menuParentAbout.addEventListener('click', function() {
+  menuToggle(subMenuAbout);
+});
+
+// Toggles Membership menu
+menuParentMember.addEventListener('click', function() {
+  menuToggle(subMenuMember);
+});
