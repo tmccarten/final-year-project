@@ -33,7 +33,7 @@ header {
 	align-items: center;
 }
 
-header h1 {
+header .logo {
 	-ms-flex: 1;
 	flex: 1;
 	font-family: 'Montserrat', 'arial', sans-serif;
@@ -44,11 +44,11 @@ header h1 {
 	text-align: left;
 }
 
-header h1 span {
+header .logo span {
 	display: block;
 }
 
-header h1 span.tagline {
+header .logo span.tagline {
 	display: none;
 	font-size: 0.8em;
 	font-family: 'Raleway', 'arial', sans-serif;
@@ -61,7 +61,7 @@ header h1 span.tagline {
 
 .nav-container {
 	width: 100%;
-	background-color: #ed1d2c;
+	background-color: #c7101d;
 }
 
 nav {
@@ -137,13 +137,19 @@ nav ul li + * {
 
 /* -- NAVIGATION ENDS -- */
 
+.heroblock {
+	height: 64.814814814814814814814814814815vmax;
+	max-height: 700px;
+	background-color: grey;
+}
+
 @media screen and (min-width: 360px) {
 
-header h1 span {
+header .logo span {
 	display: inline;
 }
 
-header h1 span.tagline {
+header .logo span.tagline {
 	display: block;
 }
 

@@ -1,7 +1,7 @@
 <div class="header-container">
   <div class="site-wrapper">
     <header>
-        <h1>Liverpool, Pembroke
+        <h1 class="logo">Liverpool, Pembroke
           <span> & Sefton</span>
           <span class="tagline">Harriers & Athletics Club</span>
         </h1>

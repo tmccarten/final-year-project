@@ -6,9 +6,15 @@ $pageAuthor = "Thomas McCarten";
 
 include ('/assets/includes/head.php');
 include ('/assets/includes/header.php');
-
 ?>
 
+<main>
+
+<section class="heroblock">
+
+</section>
+
+</main>
 
 </body>
 

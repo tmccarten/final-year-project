@@ -19,7 +19,7 @@ header {
   color: white;
   align-items: center;
 
-  h1 {
+  .logo {
     flex: 1;
     font-family: 'Montserrat', 'arial', sans-serif;
     text-transform: uppercase;
@@ -49,7 +49,7 @@ header {
 
 .nav-container {
   width: 100%;
-  background-color: lighten($maincolour, 10);
+  background-color: $maincolour;
 }
 
 nav {
@@ -102,7 +102,7 @@ nav {
   margin: 0;
   height: 0;
   overflow: hidden;
-  visibility: hidden;  
+  visibility: hidden;
 }
 
 .menu-displayed {
@@ -126,7 +126,7 @@ nav {
 
 @media screen and (min-width: 360px) {
   header {
-    h1 {
+    .logo {
       span {
         display: inline;
       }
