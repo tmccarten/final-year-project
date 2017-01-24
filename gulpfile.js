@@ -39,7 +39,8 @@
 
         gulp.task('watch', ['connect-sync', 'sass', 'mmq'], function(){
          gulp.watch('assets/css/**/*.scss', ['sass', 'mmq']);
-         gulp.watch('**/*.php', browserSync.reload);
+         gulp.watch('*.php', browserSync.reload);
+         gulp.watch('assets/includes/*.php', browserSync.reload);
          gulp.watch('assets/js/**/*.js', browserSync.reload);
           // Other watchers
         });
