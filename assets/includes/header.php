@@ -3,7 +3,7 @@
     <header>
         <h1 class="logo">Liverpool, Pembroke
           <span> & Sefton</span>
-          <span class="tagline">Harriers & Athletics Club</span>
+          <span class="strapline">Harriers & Athletics Club</span>
         </h1>
         <img src="/assets/img/icons/menu-icon.svg" class="menu-parent menu" height="30" width="22" alt="Menu button">
     </header>

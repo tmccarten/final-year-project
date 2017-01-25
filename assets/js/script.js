@@ -30,13 +30,12 @@ function headerHeight() {
 }
 }
 
-
 // Function to toggle menus on and off by adding/removing the menu-displayed class
-function menuToggle(varName) {
-  if (!varName.classList.contains('menu-displayed')) {
-    varName.classList.add('menu-displayed');
+function menuToggle(menuName) {
+  if (!menuName.classList.contains('menu-displayed')) {
+    menuName.classList.add('menu-displayed');
   } else {
-    varName.classList.remove('menu-displayed');
+    menuName.classList.remove('menu-displayed');
   }
 }
 
@@ -55,3 +54,25 @@ menuParentAbout.addEventListener('click', function() {
 menuParentMember.addEventListener('click', function() {
   menuToggle(subMenuMember);
 });
+
+/* ----- IMAGE CAROUSEL ----- */
+
+var homeHero = document.querySelector('div.heroblock-image img'),
+    imageArray = ["/assets/img/home/image1.jpg", "/assets/img/home/image2.jpg", "/assets/img/home/image3.jpg", "/assets/img/home/image4.jpg", "/assets/img/home/image5.jpg", "/assets/img/home/image6.jpg"],
+    imageIndex = 0,
+    intervalHandle = setInterval(changeImage, 5000);
+
+function changeImage() {
+
+    homeHero.setAttribute("src", imageArray[imageIndex]);
+  imageIndex++;
+	if (imageIndex >= imageArray.length) {
+	imageIndex = 0;
+	//}
+}
+}
+
+homeHero.onclick =  function () {
+    clearInterval(intervalHandle);
+    changeImage();
+};

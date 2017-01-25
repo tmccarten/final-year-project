@@ -1,9 +1,24 @@
-* {
+html {
 	box-sizing: border-box;
+	overflow-y: scroll;
 }
 
-html {
-	overflow-y: scroll;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+::-moz-selection {
+	background-color: red;
+}
+
+::selection {
+	background-color: red;
+}
+
+img {
+	display: block;
 }
 
 .site-wrapper {
@@ -17,6 +32,7 @@ html {
 
 .header-container {
 	position: fixed;
+	z-index: 1000;
 	top: 0;
 	width: 100%; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7101d+0,aa111c+100 */
 	background: #c7101d; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
@@ -28,14 +44,14 @@ html {
 header {
 	display: -ms-flexbox;
 	display: flex;
-	color: white;
 	-ms-flex-align: center;
 	align-items: center;
 }
 
-header .logo {
+.logo {
 	-ms-flex: 1;
 	flex: 1;
+	color: white;
 	font-family: 'Montserrat', 'arial', sans-serif;
 	text-transform: uppercase;
 	font-size: calc(0.875rem + 0.5vw);
@@ -44,11 +60,11 @@ header .logo {
 	text-align: left;
 }
 
-header .logo span {
+.logo span {
 	display: block;
 }
 
-header .logo span.tagline {
+.logo span.strapline {
 	display: none;
 	font-size: 0.8em;
 	font-family: 'Raleway', 'arial', sans-serif;
@@ -116,6 +132,7 @@ nav ul li + * {
 	height: 0;
 	overflow: hidden;
 	visibility: hidden;
+	transition: height 250ms ease-out;
 }
 
 .menu-displayed {
@@ -138,19 +155,107 @@ nav ul li + * {
 /* -- NAVIGATION ENDS -- */
 
 .heroblock {
-	height: 64.814814814814814814814814814815vmax;
 	max-height: 700px;
-	background-color: grey;
+	background-color: #e6e6e6;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.heroblock-image {
+	position: relative;
+	max-width: 1400px;
+	box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.5);
+}
+
+.heroblock-image:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+3,000000+100&0+50,1+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, transparent 3%, transparent 40%, black 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.heroblock-image img {
+	max-width: 100%;
+}
+
+.banner-logo-container {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	top: 54.571428571428571428571428571429%;
+	z-index: 5;
+}
+
+.logo.banner {
+	font-size: 3.0625rem;
+	padding: 0.32653061224489795918367346938776em 0.57142857142857142857142857142857em;
+	color: black;
+	letter-spacing: -0.05em;
+}
+
+.logo.banner span.strapline {
+	font-size: 0.57142857142857142857142857142857em;
+	letter-spacing: 0;
+	padding-left: 0.0612244897959183673469387755102em;
+}
+
+.banner-tagline-container {
+	position: absolute;
+	width: 100%;
+	top: 74.285714285714285714285714285714%;
+	z-index: 5;
+	opacity: 1 \9;
+	animation: fadein 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.tagline {
+	color: white;
+	margin: 0;
+	font-family: 'Raleway', 'arial', sans-serif;
+	font-size: 2.375rem;
+	font-weight: normal;
+	padding: 0 0.73684210526315789473684210526316em;
+}
+
+.tagline.strapline {
+	font-family: 'Lato', 'arial', sans-serif;
+	font-size: 0.9375rem;
+	padding: 0.4em 1.8666666666666666666666666666667em;
+	max-width: 50%;
+}
+
+.button {
+	display: inline-block;
 }
 
 @media screen and (min-width: 360px) {
 
-header .logo span {
+.logo span {
 	display: inline;
 }
 
-header .logo span.tagline {
+.logo span.strapline {
 	display: block;
+}
+
+}
+
+@keyframes fadeIn {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
 }
 
 }

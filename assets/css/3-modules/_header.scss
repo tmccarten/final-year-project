@@ -2,6 +2,7 @@
 
 .header-container {
   position: fixed;
+  z-index: 1000;
   top: 0;
   width: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7101d+0,aa111c+100 */
@@ -16,31 +17,30 @@
 
 header {
   display: flex;
-  color: white;
   align-items: center;
+}
 
-  .logo {
-    flex: 1;
-    font-family: 'Montserrat', 'arial', sans-serif;
-    text-transform: uppercase;
-    font-size: calc(0.875rem + 0.5vw);
-    //font-size: -webkit-calc(100% + 0.5vw);
-    margin: 0;
-    padding: 1em 0;
-    text-align: left;
+.logo {
+  flex: 1;
+  color: white;
+  font-family: 'Montserrat', 'arial', sans-serif;
+  text-transform: uppercase;
+  font-size: calc(0.875rem + 0.5vw);
+  margin: 0;
+  padding: 1em 0;
+  text-align: left;
+  //letter-spacing: -0.03em;
 
-    span {
-      display: block;
-    }
-
-    span.tagline {
-      display: none;
-      font-size: 0.8em;
-      font-family: 'Raleway', 'arial', sans-serif;
-      font-weight: 500;
-    }
+  span {
+    display: block;
   }
 
+  span.strapline {
+    display: none;
+    font-size: 0.8em;
+    font-family: 'Raleway', 'arial', sans-serif;
+    font-weight: 500;
+  }
 }
 
 /* --- HEADER ENDS --- */
@@ -103,6 +103,7 @@ nav {
   height: 0;
   overflow: hidden;
   visibility: hidden;
+  transition: height 250ms ease-out;
 }
 
 .menu-displayed {
@@ -125,14 +126,12 @@ nav {
 /* -- NAVIGATION ENDS -- */
 
 @media screen and (min-width: 360px) {
-  header {
-    .logo {
+  .logo {
       span {
         display: inline;
       }
-      span.tagline {
+      span.strapline {
         display: block;
       }
     }
   }
-}
