@@ -161,12 +161,16 @@ nav ul li + * {
 	display: flex;
 	-ms-flex-pack: center;
 	justify-content: center;
+	position: relative;
 }
 
 .heroblock-image {
+	display: -ms-flexbox;
+	display: flex;
 	position: relative;
+	-ms-flex-align: end;
+	align-items: flex-end;
 	max-width: 1400px;
-	box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.5);
 }
 
 .heroblock-image:after {
@@ -184,12 +188,19 @@ nav ul li + * {
 	max-width: 100%;
 }
 
-.banner-logo-container {
-	width: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
+.heroblock-image-content {
 	position: absolute;
-	top: 54.571428571428571428571428571429%;
+	width: 100%;
+	bottom: 0;
 	z-index: 5;
+}
+
+.heroblock-image-content > * {
+	margin-bottom: 1.75rem;
+}
+
+.banner-logo-container {
+	background-color: white;
 }
 
 .logo.banner {
@@ -206,10 +217,6 @@ nav ul li + * {
 }
 
 .banner-tagline-container {
-	position: absolute;
-	width: 100%;
-	top: 74.285714285714285714285714285714%;
-	z-index: 5;
 	opacity: 1 \9;
 	animation: fadein 2s;
 	animation-delay: 1s;
@@ -222,18 +229,40 @@ nav ul li + * {
 	font-family: 'Raleway', 'arial', sans-serif;
 	font-size: 2.375rem;
 	font-weight: normal;
-	padding: 0 0.73684210526315789473684210526316em;
+	margin-left: 0.73684210526315789473684210526316em;
 }
 
 .tagline.strapline {
 	font-family: 'Lato', 'arial', sans-serif;
-	font-size: 0.9375rem;
-	padding: 0.4em 1.8666666666666666666666666666667em;
-	max-width: 50%;
+	font-size: 1rem;
+	padding: 0.4em 0;
+	margin-left: 1.8666666666666666666666666666667em;
+	max-width: 35.1875em;
 }
 
 .button {
 	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.125rem;
+	margin-left: 1.5555555555555555555555555555556em;
+	padding: 0.66666666666666666666666666666667em 1.3333333333333333333333333333333em;
+	width: 11.555555555555555555555555555556em;
+	font-family: 'Raleway', 'arial', sans-serif;
+	border: 0.05555555555555555555555555555556em solid white;
+}
+
+.button:hover {
+	transform: scale(1.1, 1.1);
+	box-shadow: 0 0 0.16667em 0.05556em rgba(0, 0, 0, 0.4);
+}
+
+.button.member {
+	border: none; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7101d+0,7c0c13+100 */
+	background: #c7101d; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #c7101d 0%, #7c0c13 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7101d', endColorstr='#7c0c13',GradientType=0 ); /* IE6-9 */
 }
 
 @media screen and (min-width: 360px) {
