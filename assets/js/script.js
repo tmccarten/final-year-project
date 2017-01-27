@@ -60,7 +60,7 @@ menuParentMember.addEventListener('click', function() {
 var homeHero = document.querySelector('div.heroblock-image img'),
     imageArray = ["/assets/img/home/image1.jpg", "/assets/img/home/image2.jpg", "/assets/img/home/image3.jpg", "/assets/img/home/image4.jpg", "/assets/img/home/image5.jpg", "/assets/img/home/image6.jpg", "/assets/img/home/image7.jpg", "/assets/img/home/image8.jpg", "/assets/img/home/image9.jpg"],
     imageIndex = 0,
-    intervalHandle = setInterval(changeImage, 5000);
+    intervalHandle = setInterval(changeImage, 99999000);
 
 function changeImage() {
 

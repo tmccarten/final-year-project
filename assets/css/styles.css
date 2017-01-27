@@ -282,6 +282,8 @@ nav ul li + * {
 	-ms-flex-pack: center;
 	justify-content: center;
 	position: relative;
+	-ms-flex-direction: row;
+	flex-direction: row;
 }
 
 .heroblock-image {
@@ -307,6 +309,7 @@ nav ul li + * {
 .hero-img {
 	max-width: 100%;
 	width: 100%;
+	height: auto;
 }
 
 .heroblock-image-content {
@@ -343,6 +346,7 @@ nav ul li + * {
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
 	margin-bottom: 1rem;
+	text-align: left;
 }
 
 .tagline {
