@@ -37,7 +37,7 @@ include ('/assets/includes/header.php');
       </div>
 
     </div>
-    <img src="assets/img/home/image1.jpg" alt="">
+    <img src="assets/img/home/image1.jpg" class="hero-img" alt="" height="700" width="1400">
   </div>
 
   </section>
