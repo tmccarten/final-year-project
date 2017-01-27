@@ -13,6 +13,7 @@ include ('/assets/includes/header.php');
   <section class="heroblock">
 
     <div class="heroblock-image">
+      <img src="assets/img/home/image1.jpg" class="hero-img" alt="" height="700" width="1400">
       <div class="heroblock-image-content">
         <div class="banner-logo-container">
           <div class="site-wrapper">
@@ -37,7 +38,6 @@ include ('/assets/includes/header.php');
       </div>
 
     </div>
-    <img src="assets/img/home/image1.jpg" class="hero-img" alt="" height="700" width="1400">
   </div>
 
   </section>
