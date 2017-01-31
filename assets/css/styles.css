@@ -79,6 +79,7 @@ header {
 .nav-container {
 	width: 100%;
 	background-color: #c7101d;
+	padding-top: 0px;
 }
 
 nav {
@@ -115,6 +116,11 @@ nav ul {
 
 nav ul li + * {
 	margin-top: 2em;
+}
+
+.menu-parent.menu {
+	display: block;
+	visibility: visible;
 }
 
 .menu-parent-icon {
@@ -414,6 +420,7 @@ nav ul li + * {
 
 .menu-parent.menu {
 	display: none;
+	visibility: hidden;
 }
 
 .menu-parent-icon path {

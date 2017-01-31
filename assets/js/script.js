@@ -1,12 +1,12 @@
 
-headerHeight();
-
 var menu = document.querySelector('.menu-parent.menu');
 var nav = document.querySelector('nav');
 var menuParentAbout = document.querySelector('.menu-parent.about');
 var menuParentMember = document.querySelector('.menu-parent.member');
 var subMenuAbout = document.querySelector('.submenu.about');
 var subMenuMember = document.querySelector('.submenu.member');
+
+headerHeight();
 
 // Runs function on browser resize
 window.addEventListener('resize', headerHeight);
@@ -16,13 +16,16 @@ function headerHeight() {
 
   var headerContainer = document.querySelector('.header-container');
   var navContainer = document.querySelector('.nav-container');
+  var navContainerHeight = document.querySelector('nav ul').offsetHeight;
   var headerContainerHeight = headerContainer.offsetHeight;
   var main = document.querySelector('main');
-  var nav = document.querySelector('nav');
 
-  if (!nav.classList.contains('menu-displayed')) {
   navContainer.style.paddingTop = headerContainerHeight + "px"; // adds padding for when nav displayed in 'desktop' form
-  main.style.paddingTop = 0 + "px"; // adds top padding to main same size as header
+
+  if (getComputedStyle(menu).getPropertyValue('display') === "block") {
+    main.style.paddingTop = 0 + "px";
+} else {
+    main.style.paddingTop = navContainerHeight + headerContainerHeight + "px";
 }
 }
 
