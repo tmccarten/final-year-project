@@ -23,19 +23,20 @@ function headerHeight() {
   navContainer.style.paddingTop = headerContainerHeight + "px"; // adds padding for when nav displayed in 'desktop' form
 
   if (getComputedStyle(menu).getPropertyValue('display') === "block") {
-    main.style.paddingTop = 0 + "px";
+    main.style.paddingTop = 0 + "px"; // if the menu icon is displayed (mobile) remove the top padding from main
 } else {
     main.style.paddingTop = navContainerHeight + headerContainerHeight + "px";
 }
 }
 
 // Function to toggle menus on and off by adding/removing the menu-displayed class
-function menuToggle(menuName) {
-  if (!menuName.classList.contains('menu-displayed')) {
-    menuName.classList.add('menu-displayed');
+function menuToggle(menuOne, menuTwo) {
+  if (!menuOne.classList.contains('menu-displayed')) {
+    menuOne.classList.add('menu-displayed');
+    menuTwo.classList.remove('menu-displayed');
   }
   else {
-    menuName.classList.remove('menu-displayed');
+    menuOne.classList.remove('menu-displayed');
   }
 }
 
@@ -48,12 +49,12 @@ menu.addEventListener('click', function() {
 
 // Toggles About Us menu
 menuParentAbout.addEventListener('click', function() {
-  menuToggle(subMenuAbout);
+  menuToggle(subMenuAbout, subMenuMember);
 });
 
 // Toggles Membership menu
 menuParentMember.addEventListener('click', function() {
-  menuToggle(subMenuMember);
+  menuToggle(subMenuMember, subMenuAbout);
 });
 
 /* ----- IMAGE CAROUSEL ----- */
