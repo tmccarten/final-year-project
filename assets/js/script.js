@@ -21,12 +21,8 @@ function headerHeight() {
   var nav = document.querySelector('nav');
 
   if (!nav.classList.contains('menu-displayed')) {
-  navContainer.style.paddingTop = 0 + "px"; // removes the padding from nav when not in 'mobile' form
-  main.style.paddingTop = headerContainerHeight + "px"; // adds top padding to main same size as header
-} else {
-  navContainer.style.paddingTop = headerContainerHeight + "px";
-  //main.style.paddingTop = 0 + "px"; // removes padding from main when nav is displayed in 'mobile' form
-
+  navContainer.style.paddingTop = headerContainerHeight + "px"; // adds padding for when nav displayed in 'desktop' form
+  main.style.paddingTop = 0 + "px"; // adds top padding to main same size as header
 }
 }
 
@@ -43,6 +39,7 @@ function menuToggle(menuName) {
 // Mobile menu toggle, also runs header height function
 menu.addEventListener('click', function() {
   menuToggle(nav);
+  scroll(0,0); //go back to top in order to see displayed menu
   headerHeight();
 });
 
