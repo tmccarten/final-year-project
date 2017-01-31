@@ -25,7 +25,7 @@ function headerHeight() {
   main.style.paddingTop = headerContainerHeight + "px"; // adds top padding to main same size as header
 } else {
   navContainer.style.paddingTop = headerContainerHeight + "px";
-  main.style.paddingTop = 0 + "px"; // removes padding from main when nav is displayed in 'mobile' form
+  //main.style.paddingTop = 0 + "px"; // removes padding from main when nav is displayed in 'mobile' form
 
 }
 }
@@ -34,7 +34,8 @@ function headerHeight() {
 function menuToggle(menuName) {
   if (!menuName.classList.contains('menu-displayed')) {
     menuName.classList.add('menu-displayed');
-  } else {
+  }
+  else {
     menuName.classList.remove('menu-displayed');
   }
 }

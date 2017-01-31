@@ -5,10 +5,10 @@
 }
 
 .heroblock-image {
-	display: flex;
+	//display: flex;
 	max-width: 1400px;
   background-image: url('/assets/img/home/bground.jpg');
-  height: 300px;
+  //height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -129,7 +129,7 @@
 @media screen and (min-width: 640px) {
 
 .heroblock {
-  //flex-direction: column;
+  background-color: lightgrey;
 }
 
 .heroblock-image {
@@ -152,7 +152,7 @@
 }
 
 .heroblock-content > * {
-  margin-bottom: 1.75rem;
+  //margin-bottom: 1.75rem;
 }
 
 .banner-tagline-container {
@@ -160,14 +160,22 @@
 }
 
 .banner-logo-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3%;
   background-color: rgba(255,255,255,1);
+  display: block;
 }
 
 .logo.banner {
   font-size: 3.0625rem;
-  padding: 0.32653061224489795918367346938776em 0.57142857142857142857142857142857em;
   color: black;
   letter-spacing: -0.05em;
+  max-width: 11.551020408163265306122448979592em;
+  @media screen and (min-width: 908px) {
+    max-width: none;
+  }
 
   span.strapline {
     font-size: 0.57142857142857142857142857142857em;
@@ -175,6 +183,8 @@
     padding-left: 0.0612244897959183673469387755102em;
   }
 }
+
+
 
 @keyframes fadeIn {
   from { opacity:0;
@@ -199,7 +209,23 @@
 
 .banner-buttons-container {
   flex-direction: row;
-  max-width: none;  
+  align-self: auto;
+  max-width: none;
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.125rem;
+  margin-left: 1.5555555555555555555555555555556em;
+  padding: 0.66666666666666666666666666666667em 1.3333333333333333333333333333333em;
+  width: 11.555555555555555555555555555556em;
+  font-family: 'Raleway', 'arial', sans-serif;
+  border: 0.05555555555555555555555555555556em solid white;
+  border-radius: 0.55555555555555555555555555555556em;
+  margin-bottom: 1rem;
 }
 
 }
