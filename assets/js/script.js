@@ -1,12 +1,12 @@
 
-headerHeight();
-
 var menu = document.querySelector('.menu-parent.menu');
 var nav = document.querySelector('nav');
 var menuParentAbout = document.querySelector('.menu-parent.about');
 var menuParentMember = document.querySelector('.menu-parent.member');
 var subMenuAbout = document.querySelector('.submenu.about');
 var subMenuMember = document.querySelector('.submenu.member');
+
+headerHeight();
 
 // Runs function on browser resize
 window.addEventListener('resize', headerHeight);
@@ -16,43 +16,45 @@ function headerHeight() {
 
   var headerContainer = document.querySelector('.header-container');
   var navContainer = document.querySelector('.nav-container');
+  var navContainerHeight = document.querySelector('nav ul').offsetHeight;
   var headerContainerHeight = headerContainer.offsetHeight;
   var main = document.querySelector('main');
-  var nav = document.querySelector('nav');
 
-  if (!nav.classList.contains('menu-displayed')) {
-  navContainer.style.paddingTop = 0 + "px"; // removes the padding from nav when not in 'mobile' form
-  main.style.paddingTop = headerContainerHeight + "px"; // adds top padding to main same size as header
+  navContainer.style.paddingTop = headerContainerHeight + "px"; // adds padding for when nav displayed in 'desktop' form
+
+  if (getComputedStyle(menu).getPropertyValue('display') === "block") {
+    main.style.paddingTop = 0 + "px"; // if the menu icon is displayed (mobile) remove the top padding from main
 } else {
-  navContainer.style.paddingTop = headerContainerHeight + "px";
-  main.style.paddingTop = 0 + "px"; // removes padding from main when nav is displayed in 'mobile' form
-
+    main.style.paddingTop = navContainerHeight + headerContainerHeight + "px";
 }
 }
 
 // Function to toggle menus on and off by adding/removing the menu-displayed class
-function menuToggle(menuName) {
-  if (!menuName.classList.contains('menu-displayed')) {
-    menuName.classList.add('menu-displayed');
-  } else {
-    menuName.classList.remove('menu-displayed');
+function menuToggle(menuOne, menuTwo) {
+  if (!menuOne.classList.contains('menu-displayed')) {
+    menuOne.classList.add('menu-displayed');
+    menuTwo.classList.remove('menu-displayed');
+  }
+  else {
+    menuOne.classList.remove('menu-displayed');
   }
 }
 
 // Mobile menu toggle, also runs header height function
 menu.addEventListener('click', function() {
   menuToggle(nav);
-  headerHeight();
+  scroll(0,0); //go back to top in order to see displayed menu
+  //headerHeight();
 });
 
 // Toggles About Us menu
 menuParentAbout.addEventListener('click', function() {
-  menuToggle(subMenuAbout);
+  menuToggle(subMenuAbout, subMenuMember);
 });
 
 // Toggles Membership menu
 menuParentMember.addEventListener('click', function() {
-  menuToggle(subMenuMember);
+  menuToggle(subMenuMember, subMenuAbout);
 });
 
 /* ----- IMAGE CAROUSEL ----- */
@@ -60,7 +62,7 @@ menuParentMember.addEventListener('click', function() {
 var homeHero = document.querySelector('div.heroblock-image img'),
     imageArray = ["/assets/img/home/image1.jpg", "/assets/img/home/image2.jpg", "/assets/img/home/image3.jpg", "/assets/img/home/image4.jpg", "/assets/img/home/image5.jpg", "/assets/img/home/image6.jpg", "/assets/img/home/image7.jpg", "/assets/img/home/image8.jpg", "/assets/img/home/image9.jpg"],
     imageIndex = 0,
-    intervalHandle = setInterval(changeImage, 5000);
+    intervalHandle = setInterval(changeImage, 99999000);
 
 function changeImage() {
 
