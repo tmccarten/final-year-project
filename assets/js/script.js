@@ -44,7 +44,7 @@ function menuToggle(menuOne, menuTwo) {
 menu.addEventListener('click', function() {
   menuToggle(nav);
   scroll(0,0); //go back to top in order to see displayed menu
-  headerHeight();
+  //headerHeight();
 });
 
 // Toggles About Us menu

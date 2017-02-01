@@ -63,6 +63,7 @@ nav {
   a {
     font-family: 'Lato', 'arial', sans-serif;
     color: white;
+    text-decoration: none;
   }
 
   a.menu-parent {
@@ -142,17 +143,13 @@ nav {
 
   .nav-container {
   	width: 100%;
-  	background-color: #ffffff;
+  	background-color: #b6101c;
   	position: fixed;
   }
 
   .menu-parent.menu {
     display: none;
     visibility: hidden;
-  }
-
-  .menu-parent-icon path {
-    fill: black;
   }
 
   nav {
@@ -164,20 +161,13 @@ nav {
   }
 
   nav a {
-  	//font-family: 'Raleway', 'arial', sans-serif;
-  	color: black;
+  	color: white;
   	padding: 0.75em 1.25em;
-  	text-decoration: none;
     display: block;
   }
 
   nav a:hover {
     background-color: $maincolour;
-    color: white;
-  }
-
-  nav a:hover .menu-parent-icon path {
-    fill: white;
   }
 
   nav a.menu-parent {
@@ -187,12 +177,13 @@ nav {
   	-ms-flex-align: center;
   	/* align-items: flex-start; */
   	-ms-flex-pack: center;
-    min-width: 7.5em;
+    width: auto;
   	/* justify-content: center; */
   	/* text-decoration: none; */
 
     &.member {
-      min-width: 9.625em;
+      min-width: none;
+      width: auto;
     }
   }
 
@@ -204,12 +195,11 @@ nav {
   	/* color: black; */
   	list-style-type: none;
   	font-size: 1rem;
-  	font-family: 'Lato';
+  	//font-family: 'Lato';
   	/* font-weight: 400; */
   	margin: 0 auto;
   	/* padding: 0 3%; */
-  	background-color: white;
-    border-left: 1px solid lightgrey;
+    border-left: 1px solid #940d17;
   	-ms-flex-align: center;
   	align-items: center;
   	-ms-flex-pack: start;
@@ -223,6 +213,7 @@ nav {
   .submenu {
   	margin: 0;
   	height: 0;
+    background-color: #b6101c;
   	overflow: hidden;
   	visibility: hidden;
   	transition: height 250ms ease-out;
@@ -261,11 +252,12 @@ nav {
 
   .submenu.about.menu-displayed {
     height: 7.875em;
+    min-width: 7.758125em;
   }
 
   .submenu.member.menu-displayed {
     height: 5.25em;
-    min-width: 9.625em;
+    min-width: 9.153125em;
   }
 
   .submenu.about.menu-displayed li, .submenu.member.menu-displayed li {
