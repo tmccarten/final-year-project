@@ -38,6 +38,19 @@ include ('/assets/includes/header.php');
 
     </section>
 
+    <section class="latestnews">
+      <div class="site-wrapper">
+
+        <div class="title-viewall">
+          <h3>Latest News</h3> <p> | <a href="#">View all news</a></p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
   </main>
 
 </body>

@@ -17,8 +17,20 @@ html {
 	background-color: red;
 }
 
+body {
+	font-family: 'Lato', 'arial', sans-serif;
+}
+
+a {
+	color: black;
+}
+
 img {
 	display: block;
+}
+
+h3 {
+	font-size: 1.875rem;
 }
 
 .site-wrapper {
@@ -271,6 +283,15 @@ nav ul li + * {
 	max-width: 250px;
 }
 
+.title-viewall {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
 @media screen and (min-width: 360px) {
 
 .logo span {
@@ -307,6 +328,15 @@ nav ul li + * {
 	-ms-flex-item-align: center;
 	align-self: center;
 	max-width: none;
+}
+
+.title-viewall {
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.title-viewall p {
+	margin-left: 1rem;
 }
 
 }

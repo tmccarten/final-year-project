@@ -1,0 +1,13 @@
+.title-viewall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 522px) {
+    justify-content: flex-start;
+
+    & p {
+      margin-left: 1rem;
+    }
+  }
+}
