@@ -443,25 +443,16 @@ nav a:hover {
 }
 
 nav a.menu-parent {
-	display: -ms-flexbox;
-	display: -ms-inline-flexbox; /* display: inline-flex; */
-	-ms-flex-align: center; /* align-items: flex-start; */
-	-ms-flex-pack: center;
-	width: auto; /* justify-content: center; */ /* text-decoration: none; */
-}
-
-nav a.menu-parent.member {
-	min-width: none;
 	width: auto;
 }
 
 nav ul {
 	display: -ms-flexbox;
-	display: flex; /* max-width: 1400px; */
-	width: 100%; /* color: black; */
+	display: flex;
+	width: 100%;
 	list-style-type: none;
-	font-size: 1rem; /* font-weight: 400; */
-	margin: 0 auto; /* padding: 0 3%; */
+	font-size: 1rem;
+	margin: 0 auto;
 	border-left: 1px solid #940d17;
 	-ms-flex-align: center;
 	align-items: center;

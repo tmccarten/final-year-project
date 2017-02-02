@@ -5,10 +5,8 @@
 }
 
 .heroblock-image {
-	//display: flex;
 	max-width: 1400px;
   background-image: url('/assets/img/home/bground.jpg');
-  //height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -136,7 +134,6 @@
   max-width: 1400px;
   height: auto;
   margin: 0 auto;
-  //box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.5)
 }
 
 .hero-img {
@@ -149,10 +146,6 @@
 .heroblock-content {
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.heroblock-content > * {
-  //margin-bottom: 1.75rem;
 }
 
 .banner-tagline-container {
@@ -184,8 +177,6 @@
   }
 }
 
-
-
 @keyframes fadeIn {
   from { opacity:0;
   } to {
@@ -204,7 +195,6 @@
   font-size: 1rem;
   padding: 0.4em 0;
   margin-left: 1.8666666666666666666666666666667em;
-  //max-width: 35.1875em;
 }
 
 .banner-buttons-container {
