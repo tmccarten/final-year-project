@@ -292,6 +292,10 @@ nav ul li + * {
 	align-items: center;
 }
 
+.title-viewall p {
+	transform: translateY(3px);
+}
+
 @media screen and (min-width: 360px) {
 
 .logo span {
@@ -335,8 +339,11 @@ nav ul li + * {
 	justify-content: flex-start;
 }
 
-.title-viewall p {
-	margin-left: 1rem;
+.title-viewall h3:after {
+	content: '|';
+	margin: 0 0.2em;
+	font-size: 1em;
+	font-weight: normal;
 }
 
 }

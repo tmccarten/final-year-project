@@ -3,11 +3,22 @@
   justify-content: space-between;
   align-items: center;
 
+  & p {
+    transform: translateY(3px);
+  }
+
   @media screen and (min-width: 522px) {
     justify-content: flex-start;
 
+    h3:after {
+        content: '|';
+        margin: 0 0.2em;
+        font-size: 1em;
+        font-weight: normal;
+      }
+
     & p {
-      margin-left: 1rem;
+      //margin-left: 1rem;
     }
   }
 }
