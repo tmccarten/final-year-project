@@ -13,28 +13,31 @@ include ('/assets/includes/header.php');
     <section class="heroblock">
 
       <div class="heroblock-image">
-        <img src="assets/img/home/image1.jpg" class="hero-img" alt="" height="700" width="1400">
-      </div>
 
-      <div class="banner-logo-container">
-          <h2 class="logo banner">Liverpool, Pembroke
-                <span> & Sefton</span>
-                <span class="strapline">Harriers & Athletics Club</span>
-          </h2>
-      </div>
+        <div class="heroblock-content site-wrapper">
 
-      <div class="heroblock-content site-wrapper">
+          <div class="banner-logo-container">
+              <h2 class="logo banner">Liverpool, Pembroke
+                    <span> & Sefton</span>
+                    <span class="strapline">Harriers & Athletics Club</span>
+              </h2>
+          </div>
 
-        <div class="banner-tagline-container">
-            <h3 class="tagline">A quality club in a quality setting.</h3>
-            <p class="tagline strapline">Competing with distinction in all types of activity: leagues, county, regional and national championships.</p>
+          <div class="banner-tagline-container">
+              <h3 class="tagline">A quality club in a quality setting.</h3>
+              <p class="tagline strapline">Competing with distinction in all types of activity: leagues, county, regional and national championships.</p>
+          </div>
+
+          <div class="banner-buttons-container">
+              <a href="#" class="button">About the club</a>
+              <a href="#" class="button member">Membership</a>
+          </div>
         </div>
 
-        <div class="banner-buttons-container">
-            <a href="#" class="button">About the club</a>
-            <a href="#" class="button member">Membership</a>
-        </div>
       </div>
+
+
+
 
     </section>
 
