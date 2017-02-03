@@ -38,15 +38,42 @@ include ('/assets/includes/header.php');
 
     </section>
 
-    <section class="latestnews">
+    <section class="latestnewsblock">
       <div class="site-wrapper">
 
         <div class="title-viewall">
           <h3>Latest News</h3> <p><a href="#">View all news</a></p>
         </div>
 
-      </div>
+        <section class="latestnews">
 
+          <div class="item-preview">
+            <h4>Dan shows the way</h4>
+            <p>October 31, 2016</p>
+            <img src="/assets/img/home/image5.jpg" height="253" width="487">
+          </div>
+
+          <div class="item-preview">
+            <h4>Opening match of the cross country season</h4>
+            <p>October 5, 2016</p>
+            <img src="/assets/img/home/image5.jpg" height="253" width="487">
+          </div>
+
+          <div class="item-preview">
+            <h4>Clare claims gold and silver at British masters</h4>
+            <p>September 20, 2016</p>
+            <img src="/assets/img/home/image5.jpg" height="253" width="487">
+          </div>
+
+          <div class="item-preview">
+            <h4>Senior women find a silver lining</h4>
+            <p>September 12, 2016</p>
+            <img src="/assets/img/home/image5.jpg" height="253" width="487">
+          </div>
+
+        </section>
+
+      </div>
     </section>
 
 
