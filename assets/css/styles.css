@@ -189,16 +189,12 @@ nav ul li + * {
 
 .heroblock-image {
 	max-width: 1400px;
-	background-image: url("/assets/img/home/bground.jpg");
+	background-image: url("/assets/img/home/image2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-
-.hero-img {
-	max-width: 100%;
-	width: 100%;
+	background-position: -152px;
 	height: 300px;
-	display: none;
+	width: 100%;
 }
 
 .heroblock-content {
@@ -353,6 +349,14 @@ nav ul li + * {
 
 }
 
+@media screen and (min-width: 448px) {
+
+.heroblock-image {
+	background-position: center;
+}
+
+}
+
 @media screen and (min-width: 522px) {
 
 .heroblock-content {
@@ -415,24 +419,12 @@ nav ul li + * {
 
 .heroblock-image {
 	max-width: 1400px;
-	height: 700px;
 	width: 100%;
 	margin: 0 auto;
-}
-
-.heroblock-image:before {
-	content: '';
-	position: absolute;
-	max-width: 1400px;
-	height: 700px;
-	width: 100%;
-	margin: 0 auto;
-	background-image: linear-gradient(to bottom, transparent 20%, black 100%);
 }
 
 .heroblock-content {
 	padding: 0;
-	position: relative;
 	-ms-flex-direction: column;
 	flex-direction: column;
 	-ms-flex-pack: start;
@@ -444,7 +436,7 @@ nav ul li + * {
 .banner-tagline-container {
 	max-width: none;
 	padding-left: 3%;
-	background-color: transparent;
+	background-color: black;
 }
 
 .banner-logo-container {
@@ -452,7 +444,7 @@ nav ul li + * {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 3%;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.9);
 	display: block;
 }
 
@@ -461,6 +453,7 @@ nav ul li + * {
 	color: black;
 	letter-spacing: -0.05em;
 	max-width: 11.551020408163265306122448979592em;
+	padding-left: 0;
 }
 
 .logo.banner span.strapline {
@@ -473,14 +466,12 @@ nav ul li + * {
 	margin: 0;
 	font-size: 2.375rem;
 	font-weight: normal;
-	margin-left: 0.73684210526315789473684210526316em;
 }
 
 .tagline.strapline {
 	font-family: 'Lato', 'arial', sans-serif;
 	font-size: 1rem;
 	padding: 0.4em 0;
-	margin-left: 1.8666666666666666666666666666667em;
 }
 
 .banner-buttons-container {
@@ -491,6 +482,7 @@ nav ul li + * {
 	align-self: auto;
 	max-width: none;
 	padding: 0 3%;
+	background-color: black;
 }
 
 .button {
@@ -499,21 +491,13 @@ nav ul li + * {
 	text-decoration: none;
 	text-align: center;
 	font-size: 1.125rem;
-	margin-left: 1.5555555555555555555555555555556em;
+	margin-right: 1.5555555555555555555555555555556em;
 	padding: 0.66666666666666666666666666666667em 1.3333333333333333333333333333333em;
 	width: 11.555555555555555555555555555556em;
 	font-family: 'Raleway', 'arial', sans-serif;
 	border: 0.05555555555555555555555555555556em solid white;
 	border-radius: 0.55555555555555555555555555555556em;
-	margin-bottom: 1rem;
-}
-
-}
-
-@media screen and (min-width: 640px) and (min-width: 908px) {
-
-.logo.banner {
-	max-width: none;
+	margin-bottom: 1.2rem;
 }
 
 }
@@ -624,6 +608,65 @@ nav ul li + * {
 .submenu.about.menu-displayed li,
 .submenu.member.menu-displayed li {
 	width: 100%;
+}
+
+}
+
+@media screen and (min-width: 908px) {
+
+.logo.banner {
+	max-width: none;
+	padding: 0.32653061224489795918367346938776em 0.57142857142857142857142857142857em;
+}
+
+.heroblock-content {
+	transform: translateY(-2rem);
+	z-index: 99;
+}
+
+.banner-tagline-container {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tagline {
+	padding-left: 0.73684210526315789473684210526316em;
+}
+
+.tagline.strapline {
+	padding-left: 1.8666666666666666666666666666667em;
+}
+
+.banner-buttons-container {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 0 3%;
+}
+
+.button {
+	margin-right: 0;
+	margin-left: 1.5555555555555555555555555555556em;
+}
+
+.heroblock-image {
+	margin-bottom: -309px;
+	height: 700px;
+	background-image: url("/assets/img/home/image4.jpg");
+}
+
+.heroblock-image:before {
+	content: '';
+	position: absolute;
+	max-width: 1400px;
+	height: 700px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.title-viewall {
+	padding: 0 5%;
+}
+
+.latestnews {
+	padding: 0 5%;
 }
 
 }
