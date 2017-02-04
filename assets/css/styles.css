@@ -620,8 +620,7 @@ nav ul li + * {
 }
 
 .heroblock-content {
-	transform: translateY(-2rem);
-	z-index: 99;
+	z-index: 9;
 }
 
 .banner-tagline-container {
@@ -642,14 +641,13 @@ nav ul li + * {
 }
 
 .button {
-	margin-right: 0;
-	margin-left: 1.5555555555555555555555555555556em;
+	margin: 0 0 2em 1.5555555555555555555555555555556em;
 }
 
 .heroblock-image {
-	margin-bottom: -309px;
+	margin-bottom: -326px;
 	height: 700px;
-	background-image: url("/assets/img/home/image4.jpg");
+	background-image: url("/assets/img/home/image12.jpg");
 }
 
 .heroblock-image:before {
