@@ -1,0 +1,22 @@
+.footerblock {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1d1d;
+
+  a {
+    color: white;
+  }
+}
+
+footer {
+  padding: 0 3%;
+
+  @media screen and (min-width: 522px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 908px) {
+    padding: 0 5%;
+  }
+}

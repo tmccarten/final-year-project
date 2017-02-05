@@ -17,8 +17,26 @@
 		background-position: center;
 	}
 
+}
 
+.heroblock-image.small {
+	display: flex;
+	position: relative;
+	align-items: flex-end;
+	justify-content: flex-start;
+	background-position: top;
+	background-image: url('/assets/img/home/image11.jpg');
 
+		h2 {
+			font-size: 3.625rem;
+			width: 100%;
+			font-weight: 600;
+			color: white;
+			text-transform: uppercase;
+			margin: 0;
+			background-color: rgba(0,0,0,0.75);
+			padding: 0.58620689655172413793103448275862em 3%;
+		}
 }
 
 .heroblock-content {
@@ -52,10 +70,6 @@
 }
 
 .banner-tagline-container {
-	opacity: 1 \9;
-	animation: fadein 2s;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.8);
 	padding: 1em 0;
@@ -105,6 +119,7 @@
 
 .banner-buttons-container {
   max-width: 250px;
+	margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 522px) {
@@ -119,12 +134,17 @@
     padding: 1em 0;
   }
 
+	.button.member {
+		margin-bottom: 0;
+	}
+
   .banner-buttons-container {
     display: flex;
     flex: 1;
     flex-direction: column;
     align-self: center;
     max-width: none;
+		margin-bottom: 0;
   }
 }
 
@@ -213,6 +233,10 @@
   margin-bottom: 1.2rem;
 }
 
+.button.member {
+	margin-bottom: 1.2rem;
+}
+
 }
 
 @media screen and (min-width: 908px) {
@@ -247,6 +271,10 @@
 		margin: 0 0 2em 1.5555555555555555555555555555556em;
 	}
 
+	.button.member {
+		margin-bottom: 2em;
+	}
+
 	.heroblock-image {
 		margin-bottom: -326px;
 		height: 700px;
@@ -261,5 +289,14 @@
 			  margin: 0 auto;
 				//background-image: linear-gradient(to top, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 55%);
 			}
+	}
+
+	.heroblock-image.small {
+		height: 376px;
+		margin-bottom: 0;
+
+		h2 {
+			padding: 0.58620689655172413793103448275862em 5%;
+		}
 	}
 }

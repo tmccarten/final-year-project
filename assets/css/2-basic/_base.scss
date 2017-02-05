@@ -4,8 +4,9 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: inherit;  
 }
+
 
 ::selection {
   background-color: red;
@@ -18,6 +19,11 @@ body {
 
 a {
   color: black;
+}
+
+address {
+  font-style: normal;
+  font-size: 1rem;
 }
 
 img {
@@ -33,8 +39,12 @@ h4 {
   margin: 1rem 0;
 }
 
+h5 {
+  margin: 1rem 0;
+}
+
 .site-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  width: 100%;  
+  width: 100%;
 }
