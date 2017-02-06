@@ -1,4 +1,4 @@
-<section class="footerblock">
+<section class="contentblock footer">
   <div class="site-wrapper">
 
     <div class="titlestrip footer">

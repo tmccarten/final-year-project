@@ -4,7 +4,7 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;  
+  box-sizing: inherit;
 }
 
 
@@ -15,10 +15,11 @@ html {
 
 body {
   font-family: 'Lato', 'arial', sans-serif;
+  line-height: 1.4;
 }
 
 a {
-  color: black;
+  color: red;
 }
 
 address {

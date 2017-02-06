@@ -5,19 +5,19 @@ $pageDescription = "Official website of Liverpool, Pembroke & Sefton Harriers & 
 $pageAuthor = "Thomas McCarten";
 $activePage = "Home";
 
-include ('/assets/includes/head.php');
-include ('/assets/includes/header.php');
+include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php');
+include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 ?>
 
   <main>
 
-    <section class="heroblock">
+    <section class="contentblock hero">
 
-      <div class="heroblock-image">
+      <div class="hero-image">
 
       </div>
 
-      <div class="heroblock-content site-wrapper">
+      <div class="hero-content site-wrapper">
 
         <div class="banner-logo-container">
             <h2 class="logo banner">Liverpool, Pembroke
@@ -39,14 +39,14 @@ include ('/assets/includes/header.php');
 
     </section>
 
-    <section class="latestnewsblock">
+    <section class="contentblock latestnews">
       <div class="site-wrapper">
 
         <div class="titlestrip">
           <h3>Latest News</h3> <p><a href="#">View all news</a></p>
         </div>
 
-        <section class="latestnews">
+        <section class="latestnews-inner">
 
           <div class="item">
             <h4>Dan shows the way</h4>
@@ -75,7 +75,7 @@ include ('/assets/includes/header.php');
       </div>
     </section>
 
-    <?php include ('/assets/includes/footer.php'); ?>
+    <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php'); ?>
 
   </main>
 

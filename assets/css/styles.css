@@ -19,10 +19,11 @@ html {
 
 body {
 	font-family: 'Lato', 'arial', sans-serif;
+	line-height: 1.4;
 }
 
 a {
-	color: black;
+	color: red;
 }
 
 address {
@@ -187,16 +188,18 @@ nav ul li + * {
 
 /* -- NAVIGATION ENDS -- */
 
-.heroblock {
+.contentblock {
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-pack: center;
-	justify-content: center;
 	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
-.heroblock-image {
+.contentblock.hero {
+	background-color: lightgrey;
+}
+
+.hero-image {
 	max-width: 1400px;
 	background-image: url("/assets/img/home/image2.jpg");
 	background-size: cover;
@@ -206,7 +209,7 @@ nav ul li + * {
 	width: 100%;
 }
 
-.heroblock-image.small {
+.hero-image.small {
 	display: -ms-flexbox;
 	display: flex;
 	position: relative;
@@ -218,7 +221,7 @@ nav ul li + * {
 	background-image: url("/assets/img/home/image11.jpg");
 }
 
-.heroblock-image.small h2 {
+.hero-image.small h2 {
 	font-size: 3.625rem;
 	width: 100%;
 	font-weight: 600;
@@ -229,7 +232,7 @@ nav ul li + * {
 	padding: 0.58620689655172413793103448275862em 3%;
 }
 
-.heroblock-content {
+.hero-content {
 	width: 100%;
 	background-color: black;
 	margin: 0 auto;
@@ -384,20 +387,20 @@ nav ul li + * {
 	order: 2;
 }
 
-.latestnewsblock {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
+.contentblock.latestnews {
 	margin-bottom: 1.875rem;
 }
 
-.latestnews {
+.latestnews-inner {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 0 3%;
+}
+
+.breadbin {
+	background-color: #c7101d;
 }
 
 .titlestrip {
@@ -418,15 +421,34 @@ nav ul li + * {
 	color: white;
 }
 
-.footerblock {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
+.titlestrip.breadcrumb {
+	margin-bottom: 0;
+	padding: 2rem 3%;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.titlestrip.breadcrumb p {
+	transform: none;
+	margin: 0;
+	color: #f7a3a9;
+}
+
+.titlestrip.breadcrumb p:before {
+	content: '>';
+	margin: 0 0.5em;
+}
+
+.titlestrip.breadcrumb a {
+	color: white;
+	text-decoration: none;
+}
+
+.contentblock.footer {
 	background-color: #1d1d1d;
 }
 
-.footerblock a {
+.contentblock.footer a {
 	color: white;
 }
 
@@ -448,7 +470,7 @@ footer {
 
 @media screen and (min-width: 448px) {
 
-.heroblock-image {
+.hero-image {
 	background-position: center;
 }
 
@@ -456,7 +478,7 @@ footer {
 
 @media screen and (min-width: 522px) {
 
-.heroblock-content {
+.hero-content {
 	-ms-flex-direction: row;
 	flex-direction: row;
 }
@@ -530,17 +552,13 @@ footer {
 
 @media screen and (min-width: 640px) {
 
-.heroblock {
-	background-color: lightgrey;
-}
-
-.heroblock-image {
+.hero-image {
 	max-width: 1400px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-.heroblock-content {
+.hero-content {
 	padding: 0;
 	-ms-flex-direction: column;
 	flex-direction: column;
@@ -745,7 +763,7 @@ nav ul li + * {
 	padding: 0.32653061224489795918367346938776em 0.57142857142857142857142857142857em;
 }
 
-.heroblock-content {
+.hero-content {
 	z-index: 9;
 }
 
@@ -774,13 +792,13 @@ nav ul li + * {
 	margin-bottom: 2em;
 }
 
-.heroblock-image {
-	margin-bottom: -326px;
+.hero-image {
+	margin-bottom: -368px;
 	height: 700px;
 	background-image: url("/assets/img/home/image12.jpg");
 }
 
-.heroblock-image:before {
+.hero-image:before {
 	content: '';
 	position: absolute;
 	max-width: 1400px;
@@ -789,16 +807,16 @@ nav ul li + * {
 	margin: 0 auto;
 }
 
-.heroblock-image.small {
+.hero-image.small {
 	height: 376px;
 	margin-bottom: 0;
 }
 
-.heroblock-image.small h2 {
+.hero-image.small h2 {
 	padding: 0.58620689655172413793103448275862em 5%;
 }
 
-.latestnews {
+.latestnews-inner {
 	padding: 0 5%;
 }
 
@@ -807,8 +825,12 @@ nav ul li + * {
 	margin-bottom: 1.875rem;
 }
 
+.titlestrip.breadcrumb {
+	padding: 2rem 5%;
+}
+
 footer {
-	padding: 0 5%;
+	padding: 0 5% 5% 5%;
 }
 
 }
@@ -856,7 +878,7 @@ footer {
 	margin-left: 3.2857142857142857142857142857143%;
 }
 
-.latestnewsblock {
+.contentblock.latestnews {
 	-ms-flex-direction: row;
 	flex-direction: row;
 }

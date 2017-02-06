@@ -1,6 +1,4 @@
-.footerblock {
-  display: flex;
-  flex-direction: column;
+.contentblock.footer {
   background-color: #1d1d1d;
 
   a {
@@ -17,6 +15,6 @@ footer {
   }
 
   @media screen and (min-width: 908px) {
-    padding: 0 5%;
+    padding: 0 5% 5% 5%;
   }
 }

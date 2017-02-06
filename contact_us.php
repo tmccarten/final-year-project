@@ -1,9 +1,9 @@
 <?php
 
-$pageTitle = "News | Liverpool, Pembroke & Sefton Harriers & Athletics Club";
-$pageDescription = "News and stories from Liverpool, Pembroke & Sefton Harriers & Athletics Club.";
+$pageTitle = "Contact Us| Liverpool, Pembroke & Sefton Harriers & Athletics Club";
+$pageDescription = "Contact form for Liverpool, Pembroke & Sefton Harriers & Athletics Club.";
 $pageAuthor = "Thomas McCarten";
-$activePage = "News";
+$activePage = "Contact Us";
 
 include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php');
 include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
@@ -14,7 +14,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
     <section class="contentblock hero">
 
       <div class="hero-image small">
-        <h2>News</h2>
+        <h2>Contact Us</h2>
 
       </div>
 
