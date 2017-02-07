@@ -19,7 +19,7 @@ html {
 
 body {
 	font-family: 'Lato', 'arial', sans-serif;
-	line-height: 1.4;
+	line-height: 1.2;
 }
 
 a {
@@ -793,7 +793,7 @@ nav ul li + * {
 }
 
 .hero-image {
-	margin-bottom: -368px;
+	margin-bottom: -334px;
 	height: 700px;
 	background-image: url("/assets/img/home/image12.jpg");
 }
