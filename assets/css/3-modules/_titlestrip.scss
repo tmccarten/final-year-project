@@ -1,0 +1,63 @@
+.breadbin {
+  background-color: $maincolour;
+}
+
+.titlestrip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+
+  & p {
+    transform: translateY(3px);
+  }
+
+  @media screen and (min-width: 522px) {
+    justify-content: flex-start;
+
+    h3:after {
+        content: '|';
+        margin: 0 0.2em;
+        font-size: 1em;
+        font-weight: normal;
+      }
+
+  }
+
+  @media screen and (min-width: 908px) {
+    padding: 0 5%;
+    margin-bottom: 1.875rem;
+  }
+}
+
+.titlestrip.footer {
+  color: white;
+}
+
+.titlestrip.breadcrumb {
+  margin-bottom: 0;
+  padding: 2rem 3%;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 908px) {
+    padding: 2rem 5%;
+  }
+
+  p {
+    transform: none;
+    margin: 0;
+    color: #f7a3a9;
+
+    &:before {
+      content: '>';
+      margin: 0 0.5em;
+    }
+
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+}

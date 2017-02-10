@@ -1,6 +1,6 @@
         var gulp = require('gulp');
         var sass = require('gulp-sass');
-        var browserSync = require('browser-sync');
+        var browserSync = require('browser-sync').create();
         var mmq = require('gulp-merge-media-queries');
         var phpConnect = require('gulp-connect-php');
         var autoPrefixer = require('gulp-autoprefixer');
@@ -20,7 +20,7 @@
 
         gulp.task('connect-sync', function() {
           phpConnect.server({}, function (){
-            browserSync({
+            browserSync.init({
               proxy: '127.0.0.1:8000'
             });
           });
