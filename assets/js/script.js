@@ -6,6 +6,8 @@ var menuParentMember = document.querySelector('.menu-parent.member');
 var subMenuAbout = document.querySelector('.submenu.about');
 var subMenuMember = document.querySelector('.submenu.member');
 
+// Needs both of these to run the function on page load in Edge for some reason...
+window.addEventListener('load', headerHeight);
 headerHeight();
 
 // Runs function on browser resize
@@ -29,6 +31,7 @@ function headerHeight() {
 }
 }
 
+
 // Function to toggle menus on and off by adding/removing the menu-displayed class
 function menuToggle(menuOne, menuTwo) {
   if (!menuOne.classList.contains('menu-displayed')) {
@@ -40,11 +43,10 @@ function menuToggle(menuOne, menuTwo) {
   }
 }
 
-// Mobile menu toggle, also runs header height function
+// Mobile menu toggle
 menu.addEventListener('click', function() {
   scroll(0,0); //go back to top in order to see displayed menu
-  menuToggle(nav);
-  //headerHeight();
+  menuToggle(nav);  
 });
 
 // Toggles About Us menu
@@ -57,7 +59,7 @@ menuParentMember.addEventListener('click', function() {
   menuToggle(subMenuMember, subMenuAbout);
 });
 
-/* ----- IMAGE CAROUSEL ----- */
+/* ----- IMAGE CAROUSEL -----
 
 var homeHero = document.querySelector('div.heroblock-image img'),
     imageArray = ["/assets/img/home/image1.jpg", "/assets/img/home/image2.jpg", "/assets/img/home/image3.jpg", "/assets/img/home/image4.jpg", "/assets/img/home/image5.jpg", "/assets/img/home/image6.jpg", "/assets/img/home/image7.jpg", "/assets/img/home/image8.jpg", "/assets/img/home/image9.jpg"],
@@ -78,3 +80,5 @@ homeHero.onclick =  function () {
     clearInterval(intervalHandle);
     changeImage();
 };
+
+*/

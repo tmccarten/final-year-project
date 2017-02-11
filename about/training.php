@@ -28,8 +28,8 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
     <section class="contentblock">
       <div class="site-wrapper">
         <div class="content-inner text">
-          <p>Regular club training sessions take place at Edge Hill University on Tuesday and Thursday evenings and Sunday mornings.</p>
-          <p>We welcome athletes of all ages and standard to our training sessions.</p>
+          <p>Regular club training sessions take place at <strong>Edge Hill University on Tuesday and Thursday evenings and Sunday mornings.</strong></p>
+          <p>We welcome athletes of <strong>all ages and standard</strong> to our training sessions.</p>
           <p>The club has active links within the local community and schools.</p>
         </div>
 

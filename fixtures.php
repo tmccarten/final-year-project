@@ -27,7 +27,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
     <section class="contentblock">
       <div class="site-wrapper">
-        <div class="content-inner text">
+        <div class="content-inner text">          
           <p>For a more extensive fixture listing please visit <a href="#">Northern Athletics</a></p>
           <p><strong>Remember Free To Enter events:</strong></p>
               <p><a href="#">Ormskirk Parkrun</a> every Saturday 9am</p>
