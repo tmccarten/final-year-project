@@ -194,6 +194,24 @@ nav ul li + * {
 	flex-direction: column;
 }
 
+.content-inner {
+	padding: 0 3%;
+}
+
+.content-inner ul {
+	padding: 0 1em;
+}
+
+.content-inner li {
+	padding: 1em 0;
+}
+
+.content-inner h3 {
+	margin: 0;
+	padding: 0.875em 0;
+	border-bottom: 1px solid black;
+}
+
 .contentblock.hero {
 	background-color: lightgrey;
 }
@@ -225,7 +243,6 @@ nav ul li + * {
 	width: 100%;
 	font-weight: 600;
 	color: white;
-	text-transform: uppercase;
 	margin: 0;
 	background-color: rgba(0, 0, 0, 0.75);
 	padding: 0.58620689655172413793103448275862em 3%;
@@ -440,6 +457,34 @@ nav ul li + * {
 .titlestrip.breadcrumb a {
 	color: white;
 	text-decoration: none;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 4rem;
+	font-size: 0.875rem;
+	border-collapse: collapse;
+}
+
+.hidden-cell {
+	display: none;
+}
+
+th {
+	font-size: 1.125rem;
+	text-align: left;
+	padding: 1em 0;
+}
+
+td {
+	vertical-align: top;
+	width: 33%;
+	padding: 1em 1em 1em 0;
+	border: none;
+}
+
+tr:nth-child(even) {
+	background-color: #e3e3e3;
 }
 
 .contentblock.footer {
@@ -752,9 +797,17 @@ nav ul li + * {
 	width: 100%;
 }
 
+table {
+	font-size: 1rem;
+}
+
 }
 
 @media screen and (min-width: 908px) {
+
+.content-inner {
+	padding: 0 5%;
+}
 
 .logo.banner {
 	max-width: none;

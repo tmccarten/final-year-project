@@ -1,0 +1,31 @@
+table {
+  width: 100%;
+  margin-bottom: 4rem;
+  font-size: 0.875rem;
+  border-collapse: collapse;
+
+  @media screen and (min-width: $navbreakpoint) {
+    font-size: 1rem;
+  }
+}
+
+.hidden-cell {
+  display: none;
+}
+
+th {
+  font-size: 1.125rem;
+  text-align: left;
+  padding: 1em 0;
+}
+
+td {
+  vertical-align: top;
+  width: 33%;
+  padding: 1em 1em 1em 0;
+  border: none;
+}
+
+tr:nth-child(even) {
+  background-color: #e3e3e3;
+}
