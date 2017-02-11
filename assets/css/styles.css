@@ -192,6 +192,11 @@ nav ul li + * {
 	display: flex;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	background-color: #fff;
+}
+
+.contentblock.latestnews {
+	background-color: #eee;
 }
 
 .content-inner {
@@ -400,10 +405,6 @@ nav ul li + * {
 .iconised svg {
 	-ms-flex-order: 2;
 	order: 2;
-}
-
-.contentblock.latestnews {
-	margin-bottom: 1.875rem;
 }
 
 .latestnews-inner {
@@ -888,6 +889,11 @@ footer {
 
 @media screen and (min-width: 1058px) {
 
+.contentblock.latestnews {
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
 .item {
 	display: -ms-flexbox;
 	display: flex;
@@ -927,11 +933,6 @@ footer {
 
 .item + * {
 	margin-left: 3.2857142857142857142857142857143%;
-}
-
-.contentblock.latestnews {
-	-ms-flex-direction: row;
-	flex-direction: row;
 }
 
 }

@@ -26,8 +26,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
           <p>For a more extensive fixture listing please visit <a href="#">Northern Athletics</a></p>
           <p>Remember Free To Enter events:</p>
               <p><a href="#">Ormskirk Parkrun</a> every Saturday 9am</p>
-              <p><a href="#">Halewood 5k</a> first Saturday in month 10am</p>
-          </p>
+              <p><a href="#">Halewood 5k</a> first Saturday in month 10am</p>          
 
           <h3>Fixtures 16/17</h3>
 

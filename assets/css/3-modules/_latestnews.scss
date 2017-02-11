@@ -1,11 +1,3 @@
-.contentblock.latestnews {
-  margin-bottom: 1.875rem;
-
-  @media screen and (min-width: 1058px) {
-    flex-direction: row;
-  }
-}
-
 .latestnews-inner {
   display: flex;
   flex-wrap: wrap;

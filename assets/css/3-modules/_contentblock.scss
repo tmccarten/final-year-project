@@ -1,6 +1,14 @@
 .contentblock {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+}
+
+.contentblock.latestnews {
+  background-color: #eee;
+  @media screen and (min-width: 1058px) {
+    flex-direction: row;
+  }
 }
 
 .content-inner {

@@ -75,6 +75,40 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
       </div>
     </section>
 
+    <section class="contentblock">
+      <div class="site-wrapper">
+
+        <div class="titlestrip">
+          <h3>Upcoming fixtures</h3> <p><a href="#">View all fixtures</a></p>
+        </div>
+
+        <div class="content-inner">
+
+          <table>
+            <tr><th>Date</th><th>Venue</th><th>Event</th></tr>
+
+            <tr>
+              <td>Sat, 11th Feb.</td>
+              <td>Rossall School, Cleveleys</td>
+              <td>Mid-lancs Cross Country League Race 5</td>
+            </tr>
+            <tr>
+              <td>Sat, 4th Mar.</td>
+              <td>Leigh Sports Village</td>
+              <td>Mid-lancs Cross Country League Race 6</td>
+            </tr>
+            <tr>
+              <td>Sat, 11th Mar.</td>
+              <td>Prestwold Hall, Loughbrough</td>
+              <td>Inter Counties Championships</td>
+            </tr>
+          </table>
+
+        </div>
+
+      </div>
+    </section>
+
     <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php'); ?>
 
   </main>
