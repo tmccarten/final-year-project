@@ -23,7 +23,7 @@
   }
 
   li {
-    padding: 1em 0;
+    padding: 0.5em 0;
   }
 
   h3 {
@@ -31,4 +31,20 @@
     padding: 0.875em 0;
     border-bottom: 1px solid black;
   }
+}
+
+.content-inner.text {
+
+  @media screen and (min-width: $navbreakpoint) {
+    font-size: 1.25rem;
+  }
+
+  @media screen and (min-width: 908px) {
+    font-size: 1.5rem;
+  }
+
+  max-width: 40em;
+  line-height: 1.4;
+  text-align: justify;
+  padding-bottom: 2rem;
 }

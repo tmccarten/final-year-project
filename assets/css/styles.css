@@ -208,13 +208,20 @@ nav ul li + * {
 }
 
 .content-inner li {
-	padding: 1em 0;
+	padding: 0.5em 0;
 }
 
 .content-inner h3 {
 	margin: 0;
 	padding: 0.875em 0;
 	border-bottom: 1px solid black;
+}
+
+.content-inner.text {
+	max-width: 40em;
+	line-height: 1.4;
+	text-align: justify;
+	padding-bottom: 2rem;
 }
 
 .contentblock.hero {
@@ -798,6 +805,10 @@ nav ul li + * {
 	width: 100%;
 }
 
+.content-inner.text {
+	font-size: 1.25rem;
+}
+
 table {
 	font-size: 1rem;
 }
@@ -808,6 +819,10 @@ table {
 
 .content-inner {
 	padding: 0 5%;
+}
+
+.content-inner.text {
+	font-size: 1.5rem;
 }
 
 .logo.banner {

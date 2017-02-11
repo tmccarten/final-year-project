@@ -22,11 +22,13 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
     <section class="contentblock">
       <div class="site-wrapper">
-        <div class="content-inner">
+        <div class="content-inner text">
           <p>For a more extensive fixture listing please visit <a href="#">Northern Athletics</a></p>
           <p>Remember Free To Enter events:</p>
               <p><a href="#">Ormskirk Parkrun</a> every Saturday 9am</p>
-              <p><a href="#">Halewood 5k</a> first Saturday in month 10am</p>          
+              <p><a href="#">Halewood 5k</a> first Saturday in month 10am</p>
+        </div>
+        <div class="content-inner">
 
           <h3>Fixtures 16/17</h3>
 
@@ -89,7 +91,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
               <td>Northern Athletics 12 & 6 stage relays</td>
             </tr>
           </table>
-        </div>
+        </div>       
 
       </div>
     </section>
