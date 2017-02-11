@@ -1,5 +1,5 @@
 .breadbin {
-  background-color: $maincolour;  
+  background-color: #efefef;
 }
 
 .titlestrip {
@@ -46,7 +46,7 @@
   p {
     transform: none;
     margin: 0;
-    color: #f7a3a9;
+    color: #484848;
 
     &:before {
       content: '>';
@@ -56,8 +56,7 @@
   }
 
   a {
-    color: white;
-    text-decoration: none;
+    color: $maincolour;
   }
 
 }

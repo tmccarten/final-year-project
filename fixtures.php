@@ -12,19 +12,24 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
   <main>
 
     <section class="contentblock hero">
-
       <div class="hero-image small">
         <h2>Fixtures</h2>
-
       </div>
-
     </section>
+
+    <div class="breadbin">
+      <div class="site-wrapper">
+          <div class="titlestrip breadcrumb">
+            <a href="/fixtures.php">Home</a><p>Fixtures</p>
+          </div>
+      </div>
+    </div>
 
     <section class="contentblock">
       <div class="site-wrapper">
         <div class="content-inner text">
           <p>For a more extensive fixture listing please visit <a href="#">Northern Athletics</a></p>
-          <p>Remember Free To Enter events:</p>
+          <p><strong>Remember Free To Enter events:</strong></p>
               <p><a href="#">Ormskirk Parkrun</a> every Saturday 9am</p>
               <p><a href="#">Halewood 5k</a> first Saturday in month 10am</p>
         </div>
@@ -91,7 +96,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
               <td>Northern Athletics 12 & 6 stage relays</td>
             </tr>
           </table>
-        </div>       
+        </div>
 
       </div>
     </section>

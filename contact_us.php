@@ -15,10 +15,17 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
       <div class="hero-image small">
         <h2>Contact Us</h2>
-
       </div>
 
     </section>
+
+    <div class="breadbin">
+      <div class="site-wrapper">
+          <div class="titlestrip breadcrumb">
+            <a href="/index.php">Home</a><p>Contact Us</p>
+          </div>
+      </div>
+    </div>
 
     <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php'); ?>
 

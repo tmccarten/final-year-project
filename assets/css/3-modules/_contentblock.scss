@@ -35,16 +35,24 @@
 
 .content-inner.text {
 
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 3rem;
+    }
+
   @media screen and (min-width: $navbreakpoint) {
     font-size: 1.25rem;
   }
 
   @media screen and (min-width: 908px) {
-    font-size: 1.5rem;
+    //font-size: 1.5rem;
   }
 
   max-width: 40em;
   line-height: 1.4;
   text-align: justify;
-  padding-bottom: 2rem;
+
 }
