@@ -213,11 +213,11 @@ nav ul li + * {
 	width: 100%;
 	-ms-flex-preferred-size: auto;
 	flex-basis: auto;
-	text-align: justify;
+	text-align: left;
 }
 
 .content-inner.fixtures {
-	max-width: 65%;
+	max-width: 100%;
 }
 
 .content-inner ul {
@@ -230,7 +230,7 @@ nav ul li + * {
 
 .content-inner h3 {
 	margin: 0;
-	padding: 0.875em 0;
+	padding: 0 0 0.875em 0;
 	border-bottom: 1px solid black;
 }
 
@@ -238,7 +238,7 @@ nav ul li + * {
 	font-size: 0.875rem;
 	-ms-flex-preferred-size: auto;
 	flex-basis: auto;
-	background-color: #dbdbdb;
+	background-color: #e4e4e4;
 	padding: 0 2rem;
 	width: 100%;
 }
@@ -492,10 +492,6 @@ nav ul li + * {
 	padding: 0 3%;
 }
 
-.breadbin {
-	background-color: #efefef;
-}
-
 .titlestrip {
 	display: -ms-flexbox;
 	display: flex;
@@ -541,6 +537,7 @@ table {
 	margin-bottom: 4rem;
 	font-size: 0.875rem;
 	border-collapse: collapse;
+	text-align: left;
 }
 
 .hidden-cell {
@@ -973,6 +970,10 @@ footer {
 
 @media screen and (min-width: 986px) {
 
+.content-inner.fixtures {
+	max-width: 35em;
+}
+
 .content-aside {
 	width: 35%;
 	max-width: 378px;
@@ -1043,6 +1044,7 @@ footer {
 @media screen and (min-width: 1190px) {
 
 .content-inner {
+	max-width: 35em;
 	font-size: 1.125rem;
 }
 
