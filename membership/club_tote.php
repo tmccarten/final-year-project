@@ -31,8 +31,8 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
     </div>
 
     <section class="contentblock">
-      <div class="site-wrapper">
-        <div class="content-inner text">
+      <div class="content-wrapper site-wrapper">
+        <div class="content-inner aside">
           <h3>Support the club</h3>
           <p>The club’s Monthly Tote Account has been going for over 20 years and is our principal means of funding development, equipment etc.</p><p><strong>We need more people to join.</strong></p>
           <p>Individuals pay by Standing Order £2 per month of which half is prize money. Any number of units can be acquired. Cash or cheques are equally acceptable.</p>
@@ -47,7 +47,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
             <li>May - No 30 JG Crisp</li>
             <li>June - No 29 Joan Tangeman</li>
             <li>July - No 69 Wally Bridson</li>
-            <li>August - No 62 D Kirkbride</li>   
+            <li>August - No 62 D Kirkbride</li>
             <li>September - No 12 Jeff Mason</li>
           </ul>
 

@@ -2,20 +2,35 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  flex-basis: auto;
 }
 
-.contentblock.latestnews {
-  background-color: #eee;
-  @media screen and (min-width: 1058px) {
-    flex-direction: row;
-  }
-}
-
-.content-inner {
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 3%;
+  justify-content: space-between;
 
   @media screen and (min-width: $paddingbreakpoint) {
     padding: 0 5%;
+  }
+
+}
+
+.content-inner {
+  line-height: 1.4;
+  max-width: 35em;
+  width: 100%;
+  flex-basis: auto;
+  text-align: justify;
+
+    &.fixtures {
+      max-width: 65%;
+
+    }
+
+  @media screen and (min-width: 1190px) {
+    font-size: 1.125rem;
   }
 
   ul {
@@ -33,7 +48,64 @@
   }
 }
 
-.content-inner.text {
+.content-aside {
+  font-size: 0.875rem;
+  flex-basis: auto;
+  //max-width: 35em;
+  background-color: #dbdbdb;
+  padding: 0 2rem;
+  width: 100%;
+
+  @media screen and (min-width: 986px) {
+    width: 35%;
+    max-width: 378px;
+    margin-left: 1rem;
+  }
+
+  h4 {
+    margin: 2rem 0;
+  }
+
+  figure {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 2rem;
+
+    @media screen and (min-width: 522px) {
+      max-width: 50%;
+    }
+
+    @media screen and (min-width: 986px) {
+      max-width: 100%;
+    }
+
+    & + * {
+      padding-top: 2rem;
+      //padding-bottom: 0;
+      border-top: 1px dotted black;
+
+        @media screen and (min-width: 522px) {
+          border-top: none;
+          padding-top: 0;
+          padding-bottom: 2rem;
+        }
+    }
+
+    img {
+      max-width: 50%;
+      height: auto;
+      max-height: 100px;
+      //margin-right: 1rem;
+    }
+
+    a {
+      padding: 0 1rem;
+      font-size: 1rem;
+    }
+  }
 
   p:last-child {
     margin-bottom: 0;
@@ -43,16 +115,23 @@
     padding-bottom: 3rem;
     }
 
-  @media screen and (min-width: $navbreakpoint) {
-    font-size: 1.25rem;
+  @media screen and (min-width: $paddingbreakpoint) {
+    font-size: 1rem;
   }
 
-  @media screen and (min-width: 908px) {
-    //font-size: 1.5rem;
-  }
+.aside.latestnews {
+  display: flex;
+  flex-direction: column;
 
-  max-width: 40em;
-  line-height: 1.4;
-  text-align: left;
+    @media screen and (min-width: 522px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 986px) {
+      flex-direction: column;
+    }
+}
+
 
 }

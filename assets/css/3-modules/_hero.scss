@@ -272,16 +272,6 @@
 		margin-bottom: -334px;
 		height: 700px;
 		background-image: url('/assets/img/home/image12.jpg');
-
-			&:before {
-				content: '';
-				position: absolute;
-				max-width: 1400px;
-			  height: 700px;
-				width: 100%;
-			  margin: 0 auto;
-				//background-image: linear-gradient(to top, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 55%);
-			}
 	}
 
 	.hero-image.small {
