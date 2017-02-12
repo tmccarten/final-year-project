@@ -214,6 +214,7 @@ nav ul li + * {
 	-ms-flex-preferred-size: auto;
 	flex-basis: auto;
 	text-align: left;
+	margin-bottom: 2rem;
 }
 
 .content-inner.fixtures {
