@@ -55,7 +55,6 @@
 .content-aside {
   font-size: 0.875rem;
   flex-basis: auto;
-  //max-width: 35em;
   background-color: #e4e4e4;
   padding: 0 2rem;
   width: 100%;
@@ -116,7 +115,7 @@
   }
 
   &:last-child {
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
     }
 
   @media screen and (min-width: $paddingbreakpoint) {
@@ -126,6 +125,10 @@
 .aside.latestnews {
   display: flex;
   flex-direction: column;
+
+  h4 {
+    width: 100%;
+  }
 
     @media screen and (min-width: 522px) {
       flex-direction: row;

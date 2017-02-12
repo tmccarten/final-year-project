@@ -92,14 +92,14 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
           </div>
 
           <aside class="content-aside">
-            <h4>Links</h4>
+            <h4>Info</h4>
             <p>For a more extensive fixture listing please visit <a href="#">Northern Athletics</a></p>
             <p><strong>Remember Free To Enter events:</strong></p>
             <p><a href="#">Ormskirk Parkrun</a> every Saturday 9am</p>
             <p><a href="#">Halewood 5k</a> first Saturday in month 10am</p>
 
-            <h4>Latest News</h4>
             <section class="aside latestnews">
+              <h4>Latest News</h4>
               <figure>
                 <img src="/assets/img/home/image11.jpg">
                 <a href="#">Dan shows the way Dan shows the way</a>

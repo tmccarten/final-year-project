@@ -280,7 +280,7 @@ nav ul li + * {
 }
 
 .content-aside:last-child {
-	padding-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 .content-aside .aside.latestnews {
@@ -288,6 +288,10 @@ nav ul li + * {
 	display: flex;
 	-ms-flex-direction: column;
 	flex-direction: column;
+}
+
+.content-aside .aside.latestnews h4 {
+	width: 100%;
 }
 
 .contentblock.hero {
@@ -534,7 +538,7 @@ nav ul li + * {
 
 table {
 	width: 100%;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	font-size: 0.875rem;
 	border-collapse: collapse;
 	text-align: left;
