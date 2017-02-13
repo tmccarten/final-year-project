@@ -50,13 +50,17 @@
       max-width: 50%;
       height: auto;
       max-height: 100px;
-    }
+  }
 
     a {
       padding: 0 1rem;
+
+      @media screen and (min-width: 827px) {
+        padding: 0 0 0 1rem;
+      }
       font-size: 1rem;
       font-weight: bold;
-      max-width: 50%;
+      max-width: 100%;
     }
   }
 

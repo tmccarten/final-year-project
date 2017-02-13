@@ -234,7 +234,7 @@ nav ul li + * {
 	padding: 0 1rem;
 	font-size: 1rem;
 	font-weight: bold;
-	max-width: 50%;
+	max-width: 100%;
 }
 
 .aside-container p:last-child {
@@ -938,6 +938,10 @@ nav ul li + * {
 .aside-container {
 	max-width: 378px;
 	margin: 0 0 3rem 1rem;
+}
+
+.aside-container figure a {
+	padding: 0 0 0 1rem;
 }
 
 .content-wrapper {
