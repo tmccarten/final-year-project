@@ -26,7 +26,10 @@
 	background-image: url('/assets/img/home/image11.jpg');
 
 		h2 {
-			font-size: 3.625rem;
+			font-size: 2.625rem;
+			@media screen and (min-width: 700px) {
+				font-size: 3.625rem;
+			}
 			width: 100%;
 			font-weight: 600;
 			color: white;

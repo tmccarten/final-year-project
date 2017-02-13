@@ -47,99 +47,12 @@
   }
 
   h3 {
+    font-size: 1.5rem;
+    @media screen and (min-width: 700px) {
+      font-size: 1.875rem;
+    }
     margin: 0;
     padding: 0 0 0.875em 0;
     border-bottom: 1px solid black;
   }
-}
-
-.content-aside {
-  font-size: 0.875rem;
-  flex-basis: auto;
-  background-color: #e4e4e4;
-  padding: 0 2rem;
-  width: 100%;
-
-  @media screen and (min-width: 986px) {
-    width: 35%;
-    max-width: 378px;
-    margin-left: 1rem;
-  }
-
-  h4 {
-    margin: 2rem 0;
-  }
-
-  figure {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-    padding-bottom: 2rem;
-
-    @media screen and (min-width: 522px) {
-      max-width: 50%;
-    }
-
-    @media screen and (min-width: 986px) {
-      max-width: 100%;
-    }
-
-    & + * {
-      padding-top: 2rem;
-      //padding-bottom: 0;
-      border-top: 1px dotted black;
-
-        @media screen and (min-width: 522px) {
-          border-top: none;
-          padding-top: 0;
-          padding-bottom: 2rem;
-        }
-    }
-
-    img {
-      max-width: 50%;
-      height: auto;
-      max-height: 100px;
-      //margin-right: 1rem;
-    }
-
-    a {
-      padding: 0 1rem;
-      font-size: 1rem;
-    }
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 3rem;
-    }
-
-  @media screen and (min-width: $paddingbreakpoint) {
-    font-size: 1rem;
-  }
-
-.aside.latestnews {
-  display: flex;
-  flex-direction: column;
-
-  h4 {
-    width: 100%;
-  }
-
-    @media screen and (min-width: 522px) {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 986px) {
-      flex-direction: column;
-    }
-}
-
-
 }

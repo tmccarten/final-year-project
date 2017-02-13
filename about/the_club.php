@@ -49,27 +49,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
             <p>Members of the club have won numerous individual honours and team titles locally and nationally. Currently several members have achieved international selection that includes <strong>European and Olympic representation.</strong></p>
           </div>
 
-          <aside class="content-aside">
-            <section class="aside latestnews">
-              <h4>Latest News</h4>
-              <figure>
-                <img src="/assets/img/home/image11.jpg">
-                <a href="#">Dan shows the way Dan shows the way</a>
-              </figure>
-              <figure>
-                <img src="/assets/img/home/image11.jpg">
-                <a href="#">Dan shows the way Dan shows the way</a>
-              </figure>
-              <figure>
-                <img src="/assets/img/home/image11.jpg">
-                <a href="#">Dan shows the way Dan shows the way</a>
-              </figure>
-              <figure>
-                <img src="/assets/img/home/image11.jpg">
-                <a href="#">Dan shows the way Dan shows the way</a>
-              </figure>
-            </section>
-          </aside>
+          <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/sidebar.php'); ?>
 
         </div>
       </div>

@@ -82,8 +82,8 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
           <h3>Upcoming fixtures</h3> <p><a href="#">View all fixtures</a></p>
         </div>
 
-        <div class="content-inner">
 
+        <section class="fixtures-inner">
           <table>
             <tr><th>Date</th><th>Venue</th><th>Event</th></tr>
 
@@ -103,8 +103,9 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
               <td>Inter Counties Championships</td>
             </tr>
           </table>
+        </section>
 
-        </div>
+
 
       </div>
     </section>

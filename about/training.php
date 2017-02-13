@@ -27,11 +27,14 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
     <section class="contentblock">
       <div class="site-wrapper">
-        <div class="content-inner aside">
-          <p>Regular club training sessions take place at <strong>Edge Hill University on Tuesday and Thursday evenings and Sunday mornings.</strong></p>
-          <p>We welcome athletes of <strong>all ages and standard</strong> to our training sessions.</p>
-          <p>The club has active links within the local community and schools.</p>
-        </div>
+        <div class="content-wrapper">
+
+          <aside class="info">
+            <h4>Info</h4>
+            <p>Regular club training sessions take place at <strong>Edge Hill University</strong> on Tuesday and Thursday evenings and Sunday mornings.</p>
+            <p>We welcome athletes of <strong>all ages and standard</strong> to our training sessions.</p>
+            <p>The club has active links within the local community and schools.</p>
+          </aside>
 
         <div class="content-inner">
 
@@ -122,12 +125,12 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
             </tr>
           </table>
         </div>
+
+        <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/sidebar.php'); ?>
+
+        </div>
       </div>
     </section>
-
-
-
-
 
     <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php'); ?>
 
