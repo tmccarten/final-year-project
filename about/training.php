@@ -36,98 +36,102 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
             <p>The club has active links within the local community and schools.</p>
           </aside>
 
-        <div class="content-inner">
-
-          <h3>Sessions</h3>
-
-          <table>
-            <tr><th>Event</th><th>Coach</th><th>Time</th></tr>
-
-            <tr>
-              <td>Sprints</td>
-              <td>Ray Twentyman</td>
-              <td>Tues & Thurs 18:30, Sunday 11:00</td>
-            </tr>
-            <tr>
-              <td>Sprints</td>
-              <td>Tricia Farrell</td>
-              <td>Tues & Thurs 18:30, Sunday 11:00</td>
-            </tr>
-            <tr>
-              <td>Sprints</td>
-              <td>Mike Dandy</td>
-              <td>Tues & Thurs 18:45</td>
-            </tr>
-            <tr>
-              <td>Hurdles</td>
-              <td>Nic Christie</td>
-              <td>Thurs 18:00</td>
-            </tr>
-            <tr>
-              <td>Throws</td>
-              <td>Dave Brown</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>Pole Vault</td>
-              <td>Dave McComb</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>High Jump</td>
-              <td>Dave McComb</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>High Jump</td>
-              <td>Phil Whitfield</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>Long & Triple Jump</td>
-              <td>Billy Williams</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>Endurance</td>
-              <td>John McCarten</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>Endurance</td>
-              <td>John Bride</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>Endurance</td>
-              <td>Mark Bleasdale</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>Endurance</td>
-              <td>Kirsty Longley</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>Endurance</td>
-              <td>Karyn Hannaway</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>Endurance</td>
-              <td>Chris Hannaway</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-            <tr>
-              <td>Beginners</td>
-              <td>Paul Bousfield</td>
-              <td>Tues & Thurs 18:30</td>
-            </tr>
-          </table>
         </div>
 
-        <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/sidebar.php'); ?>
+        <div class="content-wrapper">
+          <div class="content-inner">
 
+            <h3>Sessions</h3>
+
+            <table>
+              <tr><th>Event</th><th>Coach</th><th>Time</th></tr>
+
+              <tr>
+                <td>Sprints</td>
+                <td>Ray Twentyman</td>
+                <td>Tues & Thurs 18:30, Sunday 11:00</td>
+              </tr>
+              <tr>
+                <td>Sprints</td>
+                <td>Tricia Farrell</td>
+                <td>Tues & Thurs 18:30, Sunday 11:00</td>
+              </tr>
+              <tr>
+                <td>Sprints</td>
+                <td>Mike Dandy</td>
+                <td>Tues & Thurs 18:45</td>
+              </tr>
+              <tr>
+                <td>Hurdles</td>
+                <td>Nic Christie</td>
+                <td>Thurs 18:00</td>
+              </tr>
+              <tr>
+                <td>Throws</td>
+                <td>Dave Brown</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>Pole Vault</td>
+                <td>Dave McComb</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>High Jump</td>
+                <td>Dave McComb</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>High Jump</td>
+                <td>Phil Whitfield</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>Long & Triple Jump</td>
+                <td>Billy Williams</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>Endurance</td>
+                <td>John McCarten</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>Endurance</td>
+                <td>John Bride</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>Endurance</td>
+                <td>Mark Bleasdale</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>Endurance</td>
+                <td>Kirsty Longley</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>Endurance</td>
+                <td>Karyn Hannaway</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>Endurance</td>
+                <td>Chris Hannaway</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+              <tr>
+                <td>Beginners</td>
+                <td>Paul Bousfield</td>
+                <td>Tues & Thurs 18:30</td>
+              </tr>
+            </table>
+          </div>
+
+          <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/sidebar.php'); ?>
+
+        </div>
         </div>
       </div>
     </section>

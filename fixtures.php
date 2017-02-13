@@ -27,6 +27,9 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
     <section class="contentblock">
       <div class="site-wrapper">
+
+
+
         <div class="content-wrapper">
 
           <aside class="info">
@@ -36,6 +39,10 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
             <p><a href="#">Ormskirk Parkrun</a> every Saturday 9am</p>
             <p><a href="#">Halewood 5k</a> first Saturday in month 10am</p>
           </aside>
+
+        </div>
+
+        <div class="content-wrapper">
 
           <div class="content-inner fixtures">
             <h3>Fixtures 16/17</h3>

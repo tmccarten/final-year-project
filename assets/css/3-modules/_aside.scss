@@ -6,10 +6,10 @@
   width: 100%;
   margin-bottom: 2rem;
 
-  @media screen and (min-width: 986px) {
-    width: 35%;
+  @media screen and (min-width: 827px) {
+    //width: 35%;
     max-width: 378px;
-    margin: 4.2rem 0 4rem 1rem;
+    margin: 0 0 3rem 1rem;
   }
 
   h4 {
@@ -27,7 +27,7 @@
     margin: 0;
     padding-bottom: 2rem;
 
-    @media screen and (min-width: 610px) {
+    @media screen and (min-width: 610px) and (max-width: 826px) {
       max-width: 50%;
     }
 
@@ -73,7 +73,7 @@ aside.latestnews {
   display: flex;
   flex-direction: column;
 
-    @media screen and (min-width: 610px) {
+    @media screen and (min-width: 610px) and (max-width: 826px) {
       flex-direction: row;
       flex-wrap: wrap;
     }
