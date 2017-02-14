@@ -27,7 +27,8 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
     <section class="contentblock">
       <div class="site-wrapper">
-        <div class="content-wrapper">
+        <div class="flex-wrapper">
+          <div class="content">
 
           <aside class="info">
             <h4>Info</h4>
@@ -35,11 +36,6 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
             <p>We welcome athletes of <strong>all ages and standard</strong> to our training sessions.</p>
             <p>The club has active links within the local community and schools.</p>
           </aside>
-
-        </div>
-
-        <div class="content-wrapper">
-          <div class="content-inner">
 
             <h3>Sessions</h3>
 
@@ -131,7 +127,6 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
           <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/sidebar.php'); ?>
 
-        </div>
         </div>
       </div>
     </section>

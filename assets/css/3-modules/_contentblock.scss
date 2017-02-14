@@ -21,24 +21,13 @@
 
 }
 
-.content-wrapper {
+.content {
   display: flex;
   width: 100%;
   flex-direction: column;
   flex-basis: auto;
-
-
-  &.sidebar {
-    @media screen and (min-width: 827px) {
-      margin-left: 1rem;
-    }
-  }
-}
-
-.content-inner {
   line-height: 1.4;
   width: 100%;
-  flex-basis: auto;
   text-align: left;
   margin-bottom: 2rem;
 
@@ -49,8 +38,6 @@
   @media screen and (min-width: 1190px) {
     font-size: 1.125rem;
   }
-
-
 
   ul {
     padding: 0 1em;
@@ -65,4 +52,10 @@
     padding: 0 0 0.875em 0;
     border-bottom: 1px solid black;
   }
+
+}
+
+.content-inner {
+
+
 }

@@ -30,8 +30,8 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
     <section class="contentblock">
       <div class="site-wrapper">
-        <div class="content-wrapper">
-          <div class="content-inner">
+        <div class="flex-wrapper">
+          <div class="content">
             <h3>Liverpool Pembroke</h3>
             <p>After several years of research Charles Gains has written the history of Liverpool Pembroke AC, from our formation, up to the Second World War. The link below will bring up an illustrated pdf document. Take a little time to read the story; it goes a long way to explaining the character our club has now. Norman Wilson and Robbie Wood have done a splendid job recording the history of the Sefton Harriers half of our club.</p>
 

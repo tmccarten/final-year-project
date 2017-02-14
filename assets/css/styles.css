@@ -279,7 +279,7 @@ aside.info h4 {
 	flex-direction: column;
 }
 
-.content-wrapper {
+.content {
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
@@ -287,26 +287,21 @@ aside.info h4 {
 	flex-direction: column;
 	-ms-flex-preferred-size: auto;
 	flex-basis: auto;
-}
-
-.content-inner {
 	line-height: 1.4;
 	width: 100%;
-	-ms-flex-preferred-size: auto;
-	flex-basis: auto;
 	text-align: left;
 	margin-bottom: 2rem;
 }
 
-.content-inner ul {
+.content ul {
 	padding: 0 1em;
 }
 
-.content-inner li {
+.content li {
 	padding: 0.5em 0;
 }
 
-.content-inner h3 {
+.content h3 {
 	margin: 0;
 	padding: 0 0 0.875em 0;
 	border-bottom: 1px solid black;
@@ -947,7 +942,7 @@ nav ul li + * {
 	padding-right: 0;
 	background-color: white;
 	min-width: 200px;
-	width: 40%;
+	width: 30%;
 	margin-left: 1rem;
 	box-shadow: 0 -10px white, 10px 0 white, -6px 0 20px -8px rgba(0, 0, 0, 0.4);
 }
@@ -963,11 +958,7 @@ nav ul li + * {
 	justify-content: space-between;
 }
 
-.content-wrapper.sidebar {
-	margin-left: 1rem;
-}
-
-.content-inner {
+.content {
 	max-width: 45em;
 }
 
@@ -1108,7 +1099,7 @@ footer {
 
 @media screen and (min-width: 1190px) {
 
-.content-inner {
+.content {
 	font-size: 1.125rem;
 }
 

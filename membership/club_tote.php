@@ -22,18 +22,16 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
     <div class="breadbin">
       <div class="site-wrapper">
-
           <div class="titlestrip breadcrumb">
             <a href="/index.php">Home</a><p>Membership</p><p>Club Tote</p>
           </div>
-
       </div>
     </div>
 
     <section class="contentblock">
       <div class="site-wrapper">
-        <div class="content-wrapper">
-          <div class="content-inner">
+        <div class="flex-wrapper">
+          <div class="content">
             <h3>Support the club</h3>
             <p>The club’s Monthly Tote Account has been going for over 20 years and is our principal means of funding development, equipment etc.</p><p><strong>We need more people to join.</strong></p>
             <p>Individuals pay by Standing Order £2 per month of which half is prize money. Any number of units can be acquired. Cash or cheques are equally acceptable.</p>

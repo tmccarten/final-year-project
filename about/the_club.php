@@ -31,9 +31,8 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
 
     <section class="contentblock">
       <div class="site-wrapper">
-        <div class="content-wrapper">
-
-          <div class="content-inner">
+        <div class="flex-wrapper">
+          <div class="content">
             <h3>A little about us...</h3>
             <p>Liverpool Pembroke and Sefton H & AC arose from a merger in 1995 of two old Liverpool clubs Pembroke (1890) and Sefton (1889). The club transferred its Track and Field section to the new <strong>Edge Hill University</strong> facilities in 1997. We draw our membership from a wide area but principally Liverpool, Sefton, Knowsley and West Lancashire.</p>
 
