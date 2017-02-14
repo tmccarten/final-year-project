@@ -4,17 +4,19 @@
   padding: 0 2rem;
   width: 100%;
   min-height: 1px;
-
-  @media screen and (min-width: $paddingbreakpoint) {
-    font-size: 1rem;
-  }
+  overflow: hidden;
 
   @media screen and (min-width: 827px) {
-    min-width: 300px;
-    width: calc(100% - 700px);
+    padding-right: 0;
+    background-color: white;
+    min-width: 200px;
+    width: 40%;
     margin-left: 1rem;
+    box-shadow: 0 -10px white, 10px 0 white, -6px 0 20px -8px rgba(0,0,0,0.4);
+  }
 
-
+  @media screen and (min-width: 1250px) {
+    font-size: 1rem;
   }
 
   h4 {
@@ -62,9 +64,8 @@
     a {
       padding: 0 0 0 1rem;
       flex: 2;
-      font-size: 1rem;
       font-weight: bold;
-      //max-width: 100%;
+      text-decoration: none;
 
       @media screen and (min-width: 610px) {
         padding: 0 1rem;
@@ -96,11 +97,8 @@ aside.info {
   width: 100%;
   max-width: 50.625em;
   background-color: #ededed;
-  //box-shadow: 0 3px 5px 1px rgba(0,0,0,0.1);
-  //border-bottom: 1px solid black;
 
   h4 {
     font-size: 1.5rem;
-    //font-weight: bold;
   }
 }

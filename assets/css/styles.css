@@ -199,6 +199,7 @@ nav ul li + * {
 	padding: 0 2rem;
 	width: 100%;
 	min-height: 1px;
+	overflow: hidden;
 }
 
 .aside-container h4 {
@@ -238,8 +239,8 @@ nav ul li + * {
 	padding: 0 0 0 1rem;
 	-ms-flex: 2;
 	flex: 2;
-	font-size: 1rem;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 aside.latestnews {
@@ -276,8 +277,6 @@ aside.info h4 {
 	padding: 0 3%;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	-ms-flex-align: start;
-	align-items: flex-start;
 }
 
 .content-wrapper {
@@ -945,9 +944,12 @@ nav ul li + * {
 @media screen and (min-width: 827px) {
 
 .aside-container {
-	min-width: 300px;
-	width: calc(100% - 700px);
+	padding-right: 0;
+	background-color: white;
+	min-width: 200px;
+	width: 40%;
 	margin-left: 1rem;
+	box-shadow: 0 -10px white, 10px 0 white, -6px 0 20px -8px rgba(0, 0, 0, 0.4);
 }
 
 .aside-container figure a {
@@ -972,10 +974,6 @@ nav ul li + * {
 }
 
 @media screen and (min-width: 908px) {
-
-.aside-container {
-	font-size: 1rem;
-}
 
 .flex-wrapper {
 	padding: 0 5%;
@@ -1112,6 +1110,14 @@ footer {
 
 .content-inner {
 	font-size: 1.125rem;
+}
+
+}
+
+@media screen and (min-width: 1250px) {
+
+.aside-container {
+	font-size: 1rem;
 }
 
 }
