@@ -9,13 +9,13 @@
   @media screen and (min-width: 827px) {
     padding-right: 0;
     background-color: white;
-    min-width: 200px;
+    min-width: 268px;
     width: 30%;
     margin-left: 1rem;
-    box-shadow: 0 -10px white, 10px 0 white, -6px 0 20px -8px rgba(0,0,0,0.4);
   }
 
   @media screen and (min-width: 1250px) {
+    box-shadow: 0 -10px white, 10px 0 white, -6px 0 20px -8px rgba(0,0,0,0.4);
     font-size: 1rem;
   }
 
@@ -55,7 +55,7 @@
     }
 
     img {
-      max-width: 50%;
+      max-width: 40%;
       width: auto;
       height: auto;
       flex: 0 0 auto;
@@ -95,6 +95,7 @@ aside.info {
   padding: 2rem;
   margin-bottom: 2rem;
   width: 100%;
+  text-align: left;
   max-width: 50.625em;
   background-color: #ededed;
 

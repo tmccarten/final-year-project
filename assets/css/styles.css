@@ -35,6 +35,11 @@ img {
 	display: block;
 }
 
+strong,
+b {
+	font-weight: 600;
+}
+
 h3 {
 	font-size: 1.5rem;
 	font-weight: normal;
@@ -228,7 +233,7 @@ nav ul li + * {
 }
 
 .aside-container figure img {
-	max-width: 50%;
+	max-width: 40%;
 	width: auto;
 	height: auto;
 	-ms-flex: 0 0 auto;
@@ -255,6 +260,7 @@ aside.info {
 	padding: 2rem;
 	margin-bottom: 2rem;
 	width: 100%;
+	text-align: left;
 	max-width: 50.625em;
 	background-color: #ededed;
 }
@@ -269,6 +275,8 @@ aside.info h4 {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	background-color: #fff;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
 }
 
 .flex-wrapper {
@@ -285,11 +293,8 @@ aside.info h4 {
 	width: 100%;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	-ms-flex-preferred-size: auto;
-	flex-basis: auto;
 	line-height: 1.4;
-	width: 100%;
-	text-align: left;
+	text-align: justify;
 	margin-bottom: 2rem;
 }
 
@@ -432,11 +437,14 @@ aside.info h4 {
 .item {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+	width: 100%;
 }
 
 .item img {
 	max-width: 100%;
 	height: auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
 }
 
 .item h4 {
@@ -627,8 +635,6 @@ footer {
 }
 
 .banner-tagline-container {
-	-ms-flex: 2;
-	flex: 2;
 	text-align: left;
 	padding: 1em 0;
 }
@@ -640,8 +646,6 @@ footer {
 .banner-buttons-container {
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex: 1;
-	flex: 1;
 	-ms-flex-direction: column;
 	flex-direction: column;
 	-ms-flex-item-align: center;
@@ -941,10 +945,9 @@ nav ul li + * {
 .aside-container {
 	padding-right: 0;
 	background-color: white;
-	min-width: 200px;
+	min-width: 268px;
 	width: 30%;
 	margin-left: 1rem;
-	box-shadow: 0 -10px white, 10px 0 white, -6px 0 20px -8px rgba(0, 0, 0, 0.4);
 }
 
 .aside-container figure a {
@@ -959,7 +962,7 @@ nav ul li + * {
 }
 
 .content {
-	max-width: 45em;
+	max-width: 40em;
 }
 
 }
@@ -1060,6 +1063,7 @@ footer {
 .item img {
 	-ms-flex-order: 1;
 	order: 1;
+	height: auto;
 }
 
 .item h4 {
@@ -1108,6 +1112,7 @@ footer {
 @media screen and (min-width: 1250px) {
 
 .aside-container {
+	box-shadow: 0 -10px white, 10px 0 white, -6px 0 20px -8px rgba(0, 0, 0, 0.4);
 	font-size: 1rem;
 }
 

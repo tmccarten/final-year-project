@@ -85,7 +85,6 @@
 }
 
 .tagline.strapline {
-	//font-family: 'Lato', 'arial', sans-serif;
 	font-size: 1rem;
 	padding: 0.4em 0;
 	max-width: 35.1875em;
@@ -129,7 +128,7 @@
   }
 
   .banner-tagline-container {
-    flex: 2;
+    //flex: 2;
     text-align: left;
     padding: 1em 0;
   }
@@ -140,7 +139,7 @@
 
   .banner-buttons-container {
     display: flex;
-    flex: 1;
+    //flex: 1;
     flex-direction: column;
     align-self: center;
     max-width: none;
