@@ -5,6 +5,7 @@ var menuParentAbout = document.querySelector('.menu-parent.about');
 var menuParentMember = document.querySelector('.menu-parent.member');
 var subMenuAbout = document.querySelector('.submenu.about');
 var subMenuMember = document.querySelector('.submenu.member');
+var menuSvg = document.querySelectorAll('.menu-parent-icon');
 
 // Needs both of these to run the function on page load in Edge for some reason...
 window.addEventListener('load', headerHeight);
@@ -46,17 +47,35 @@ function menuToggle(menuOne, menuTwo) {
 // Mobile menu toggle
 menu.addEventListener('click', function() {
   scroll(0,0); //go back to top in order to see displayed menu
-  menuToggle(nav);  
+  menuToggle(nav);
 });
 
 // Toggles About Us menu
 menuParentAbout.addEventListener('click', function() {
   menuToggle(subMenuAbout, subMenuMember);
-});
+  menuSvg[1].classList.remove('svg-rotate');
+
+    if (!menuSvg[0].classList.contains('svg-rotate')) {
+    menuSvg[0].classList.add('svg-rotate');  //rotates parent menu icon
+  }
+    else {
+      menuSvg[0].classList.remove('svg-rotate');
+    }
+  });
+
 
 // Toggles Membership menu
 menuParentMember.addEventListener('click', function() {
   menuToggle(subMenuMember, subMenuAbout);
+  menuSvg[0].classList.remove('svg-rotate');
+
+  if (!menuSvg[1].classList.contains('svg-rotate')) {
+  menuSvg[1].classList.add('svg-rotate');  //rotates parent menu icon
+}
+  else {
+    menuSvg[1].classList.remove('svg-rotate');
+
+  }
 });
 
 /* ----- IMAGE CAROUSEL -----

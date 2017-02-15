@@ -6,7 +6,7 @@
   min-height: 1px;
   overflow: hidden;
 
-  @media screen and (min-width: 827px) {
+  @media screen and (min-width: 686px) {
     padding-right: 0;
     background-color: white;
     min-width: 268px;
@@ -39,7 +39,7 @@
     margin: 0;
     padding-bottom: 2rem;
 
-    @media screen and (min-width: 610px) and (max-width: 826px) {
+    @media screen and (min-width: 610px) and (max-width: 685px) {
       max-width: 50%;
     }
 
@@ -75,7 +75,7 @@
         padding: 0 1rem;
       }
 
-      @media screen and (min-width: 827px) {
+      @media screen and (min-width: 686px) {
         padding: 0 0 0 1rem;
       }
     }
@@ -88,7 +88,7 @@ aside.latestnews {
   flex-direction: column;
   width: 100%;
 
-    @media screen and (min-width: 610px) and (max-width: 826px) {
+    @media screen and (min-width: 610px) and (max-width: 685px) {
       flex-direction: row;
       flex-wrap: wrap;
     }

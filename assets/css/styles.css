@@ -144,6 +144,11 @@ nav a.menu-parent {
 	cursor: pointer;
 }
 
+nav .svg-rotate {
+	transform: rotate(180deg);
+	transition: transform 300ms ease-in;
+}
+
 nav ul {
 	width: 100%;
 	list-style-type: none;
@@ -163,6 +168,8 @@ nav ul li + * {
 
 .menu-parent-icon {
 	margin-left: 0.5em;
+	transform: rotate(0deg);
+	transition: transform 300ms ease-in;
 }
 
 .menu-parent-icon path {
@@ -714,7 +721,7 @@ footer {
 
 }
 
-@media screen and (min-width: 610px) and (max-width: 826px) {
+@media screen and (min-width: 610px) and (max-width: 685px) {
 
 .aside-container figure {
 	max-width: 50%;
@@ -832,6 +839,37 @@ aside.latestnews {
 
 .button.member {
 	margin-bottom: 1.2rem;
+}
+
+}
+
+@media screen and (min-width: 686px) {
+
+.aside-container {
+	padding-right: 0;
+	background-color: white;
+	min-width: 268px;
+	width: 30%;
+	margin-left: 1rem;
+}
+
+.aside-container h4 {
+	margin-top: 0;
+}
+
+.aside-container figure a {
+	padding: 0 0 0 1rem;
+}
+
+.flex-wrapper {
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.content {
+	max-width: 40em;
 }
 
 }
@@ -955,37 +993,6 @@ nav ul li + * {
 
 .hero-image.small h2 {
 	font-size: 3.625rem;
-}
-
-}
-
-@media screen and (min-width: 827px) {
-
-.aside-container {
-	padding-right: 0;
-	background-color: white;
-	min-width: 268px;
-	width: 30%;
-	margin-left: 1rem;
-}
-
-.aside-container h4 {
-	margin-top: 0;
-}
-
-.aside-container figure a {
-	padding: 0 0 0 1rem;
-}
-
-.flex-wrapper {
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
-
-.content {
-	max-width: 40em;
 }
 
 }

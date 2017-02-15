@@ -11,7 +11,7 @@
   flex-direction: column;
   //align-items: flex-start;
 
-  @media screen and (min-width: 827px) {
+  @media screen and (min-width: 686px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -30,7 +30,7 @@
   text-align: justify;
   margin-bottom: 2rem;
 
-  @media screen and (min-width: 827px) {
+  @media screen and (min-width: 686px) {
     max-width: 40em;
   }
 
