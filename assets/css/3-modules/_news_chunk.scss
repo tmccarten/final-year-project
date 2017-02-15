@@ -1,0 +1,21 @@
+.news-chunk {
+  margin: 2em 0;
+
+  p.date {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: grey;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: red;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}

@@ -179,10 +179,11 @@
 }
 
 .logo.banner {
-  font-size: 3.0625rem;
+	font-size: 2rem;
   color: black;
   letter-spacing: -0.05em;
   max-width: 11.551020408163265306122448979592em;
+	max-width: none;
 	padding-left: 0;
 
   span.strapline {
@@ -194,7 +195,7 @@
 
 .tagline {
   margin: 0;
-  font-size: 2.375rem;
+  font-size: 1.375rem;
   font-weight: normal;
 
 }
@@ -203,6 +204,7 @@
   font-family: 'Lato', 'arial', sans-serif;
   font-size: 1rem;
   padding: 0.4em 0;
+	max-width: 28em;
 }
 
 .banner-buttons-container {
@@ -237,7 +239,7 @@
 @media screen and (min-width: 908px) {
 
 	.logo.banner {
-		max-width: none;
+		font-size: 3.0625rem;
 		padding: 0.32653061224489795918367346938776em 0.57142857142857142857142857142857em;
 	}
 
@@ -250,6 +252,7 @@
 	}
 
 	.tagline {
+		font-size: 2.375em;
 		padding-left: 0.73684210526315789473684210526316em;
 	}
 

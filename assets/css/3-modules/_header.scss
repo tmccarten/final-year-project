@@ -36,12 +36,8 @@ header {
   text-align: left;
   letter-spacing: -0.03em;
 
-  span {
-    display: block;
-  }
-
   span.strapline {
-    display: none;
+    display: block;
     font-size: 0.8em;
     font-family: 'Raleway', 'arial', sans-serif;
     font-weight: 500;
@@ -134,17 +130,6 @@ nav {
 }
 
 /* -- NAVIGATION ENDS -- */
-
-@media screen and (min-width: 360px) {
-  .logo {
-      span {
-        display: inline;
-      }
-      span.strapline {
-        display: block;
-      }
-    }
-  }
 
 @media screen and (min-width: 700px) {
 

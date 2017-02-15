@@ -49,28 +49,37 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
         <section class="latestnews-inner">
 
           <div class="item">
-            <h4>Dan shows the way</h4>
-            <p>October 31, 2016</p>
-            <img src="/assets/img/home/image5.jpg" height="253" width="487">
+            <a href="#">
+              <h4>Big turn out of youngsters at Sefton Park</h4>
+              <p>November 28, 2016</p>
+              <img src="assets/img/news/u15.jpg" height="244" width="487">
+            </a>
           </div>
 
           <div class="item">
-            <h4>Opening match of the cross country season</h4>
-            <p>October 5, 2016</p>
-            <img src="/assets/img/home/image5.jpg" height="253" width="487">
+            <a href="#">
+              <h4>Dan shows the way</h4>
+              <p>October 31, 2016</p>
+              <img src="assets/img/news/LPS-men-Arrowe-Park-2016.jpg" height="244" width="487">
+            </a>
           </div>
 
           <div class="item">
-            <h4>Clare claims gold and silver at British masters</h4>
-            <p>September 20, 2016</p>
-            <img src="/assets/img/home/image5.jpg" height="253" width="487">
+            <a href="#">
+              <h4>Opening match of the cross country season</h4>
+              <p>October 5, 2016</p>
+              <img src="assets/img/news/astley-park.jpg" height="244" width="487">
+            </a>
           </div>
 
           <div class="item">
-            <h4>Senior women find a silver lining</h4>
-            <p>September 12, 2016</p>
-            <img src="/assets/img/home/image5.jpg" height="253" width="487">
+            <a href="#">
+              <h4>Senior women find a silver lining</h4>
+              <p>September 12, 2016</p>
+              <img src="assets/img/news/Sahgal-Longley-Gawthorne.jpg" height="244" width="487">
+            </a>
           </div>
+
         </section>
       </div>
     </section>
