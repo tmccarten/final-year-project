@@ -14,47 +14,24 @@ html {
 
 
 body {
-  font-family: 'Open Sans', 'arial', sans-serif;
+  font-family: 'Rubik', 'arial', sans-serif;
   line-height: 1.2;
 }
 
-a {
-  color: red;
-}
 
 address {
   font-style: normal;
   font-size: 1rem;
 }
 
+figure {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
   display: block;
   height: auto;
-}
-
-strong, b {
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  @media screen and (min-width: 700px) {
-    font-size: 1.875rem;
-  }
-}
-
-h4 {
-  font-size: 1.25rem;
-  font-weight: normal;
-  margin: 1rem 0;
-}
-
-h5 {
-  font-size: 1.125rem;
-  font-weight: normal;
-  margin: 1rem 0;
 }
 
 .site-wrapper {

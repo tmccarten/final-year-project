@@ -33,8 +33,7 @@ header {
   font-size: calc(0.875rem + 0.5vw);
   margin: 0;
   padding: 1em 0;
-  text-align: left;
-  letter-spacing: -0.03em;
+  text-align: left;  
 
   span.strapline {
     display: block;
@@ -67,7 +66,13 @@ nav {
     font-family: 'Lato', 'arial', sans-serif;
     color: white;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
+
+
 
   a.menu-parent {
     display: flex;
@@ -79,7 +84,7 @@ nav {
 
   .svg-rotate {
     transform: rotate(180deg);
-    transition: transform 300ms ease-in;
+    transition: transform 200ms ease-in-out;
   }
 
   ul {
@@ -104,7 +109,7 @@ nav {
 .menu-parent-icon {
   margin-left: 0.5em;
   transform: rotate(0deg);
-  transition: transform 300ms ease-in;
+  transition: transform 200ms ease-in-out;
 
 }
 

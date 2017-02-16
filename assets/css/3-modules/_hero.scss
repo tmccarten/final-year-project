@@ -31,7 +31,7 @@
 				font-size: 3.625rem;
 			}
 			width: 100%;
-			font-weight: 600;
+			font-weight: 500;
 			color: white;
 			margin: 0;
 			background-color: rgba(0,0,0,0.75);
@@ -58,6 +58,7 @@
 
 .logo.banner {
 	font-size: 1.0625rem;
+	font-weight: bold;
 	padding: 0.32653061224489795918367346938776em 0.57142857142857142857142857142857em;
 	color: black;
 	letter-spacing: -0.05em;
@@ -106,7 +107,7 @@
 
 .button:hover {
 	transform: scale(1.1, 1.1);
-	box-shadow: 0 0 0.16667em 0.05556em rgba(0, 0, 0, 0.4);
+	text-decoration: none;
 }
 
 .button.member {
@@ -128,7 +129,6 @@
   }
 
   .banner-tagline-container {
-    //flex: 2;
     text-align: left;
     padding: 1em 0;
   }
@@ -139,7 +139,6 @@
 
   .banner-buttons-container {
     display: flex;
-    //flex: 1;
     flex-direction: column;
     align-self: center;
     max-width: none;
@@ -216,17 +215,8 @@
 }
 
 .button {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.125rem;
   margin-right: 1.5555555555555555555555555555556em;
-  padding: 0.66666666666666666666666666666667em 1.3333333333333333333333333333333em;
   width: 11.555555555555555555555555555556em;
-  font-family: 'Raleway', 'arial', sans-serif;
-  border: 0.05555555555555555555555555555556em solid white;
-  border-radius: 0.55555555555555555555555555555556em;
   margin-bottom: 1.2rem;
 }
 

@@ -1,0 +1,45 @@
+a {
+  color: red;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+strong, b {
+  font-weight: 500;
+}
+
+sup {
+  top: -0.25em;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  @media screen and (min-width: 700px) {
+    font-size: 1.875rem;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+figcaption {
+  margin: 0.8em 0;
+  font-size: 0.6875em;
+  color: grey;
+}

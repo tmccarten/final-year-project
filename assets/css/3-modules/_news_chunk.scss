@@ -1,21 +1,31 @@
 .news-chunk {
-  margin: 2em 0;
+  margin: 0 0 2em 0;
 
   p.date {
-    font-size: 1rem;
-    text-transform: uppercase;
+    font-size: 1em;
     color: grey;
   }
 
   h2 {
     margin-top: 0;
-    color: red;
     text-align: left;
   }
 
   a {
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
+
+    &:hover h2 {
+      text-decoration: underline;
+    }
+
+    p {
+      color: black;
+    }
+  }
+
+  .author:hover {
+    text-decoration: underline;
   }
 
 }
