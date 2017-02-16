@@ -46,6 +46,113 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
             <p>The club competes with distinction in all types of activity including leagues, county, regional, and national championships.</p>
 
             <p>Members of the club have won numerous individual honours and team titles locally and nationally. Currently several members have achieved international selection that includes <strong>European and Olympic representation.</strong></p>
+
+            <h3>Club officers</h3>
+
+            <table>
+              <tr><th>Role</th><th>Name</th><th>Phone</th></tr>
+              <tr>
+                <td>President</td>
+                <td>George Jones</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Life Vice President</td>
+                <td>Norman Wilson, Maureen Wood, John Bradshaw, Clive Rigby</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Chairman</td>
+                <td>Jamie Doolan</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Vice Chairman</td>
+                <td>Robbie Wood</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Secretary</td>
+                <td><a href="mailto:bridson_m@tiscali.co.uk">Walter Bridson</a></td>
+                <td>(0151) 520 1325</td>
+              </tr>
+              <tr>
+                <td>Membership Secretary</td>
+                <td><a href="mailto:running@swingarm.com">John McCarten</a</td>
+                <td>(01695) 633089</td>
+              </tr>
+              <tr>
+                <td>Treasurer</td>
+                <td>Dave Brown</td>
+                <td>(01695) 422539</td>
+              </tr>
+              <tr>
+                <td>Development Officer</td>
+                <td>Charles Gains</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Welfare Officer</td>
+                <td>Libby Wilson</td>
+                <td>077678427787</td>
+              </tr>
+              <tr>
+                <td>Track Captain (Men)</td>
+                <td>Luke Edwards</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Track Captain (Women)</td>
+                <td>Kirsty Longley</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>T&F Secretary</td>
+                <td><a href="mailto:bridson_m@tiscali.co.uk">Walter Bridson</a>, Clive Rigby</td>
+                <td>(0151) 520 1325</td>
+              </tr>
+              <tr>
+                <td>Young Athletes Co-ordinator</td>
+                <td><a href="mailto:bridson_m@tiscali.co.uk">Walter Bridson</a></td>
+                <td>(0151) 520 1325</td>
+              </tr>
+              <tr>
+                <td>Road & Country Co-ordinator (Men)</td>
+                <td>Mark Wynne</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Road & Country Co-ordinator (Women)</td>
+                <td>Kirsty Longley</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cross Country Co-ordinator</td>
+                <td>Mark Bleasdale</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Officials Secretary</td>
+                <td>Karen Brown</td>
+                <td>(01695) 422539</td>
+              </tr>
+              <tr>
+                <td>Health & Safety</td>
+                <td>George Jones</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Committee</td>
+                <td>Mike Dandy, Karen Brown, Phil Whitfield, Paul Jamieson, Paul Rudkin, Clive Rigby</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Website Editor</td>
+                <td><a href="mailto:robbie@lps-athletics.co.uk">Robbie Wood</td>
+                <td></td>
+              </tr>
+            </table>
+
           </div>
 
           <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/sidebar.php'); ?>

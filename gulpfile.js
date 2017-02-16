@@ -4,6 +4,7 @@
         var mmq = require('gulp-merge-media-queries');
         var phpConnect = require('gulp-connect-php');
         var autoPrefixer = require('gulp-autoprefixer');
+        var purge = require('gulp-css-purge');
 
 
         gulp.task('sass', function() {
@@ -13,6 +14,7 @@
                     browsers: ['last 2 versions'],
                     cascade: false
                 }))
+            .pipe(purge())
             .pipe(gulp.dest('assets/css'));
         });
 

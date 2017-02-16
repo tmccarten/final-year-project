@@ -5,6 +5,7 @@
   width: 100%;
   min-height: 1px;
   overflow: hidden;
+  margin-bottom: 2rem;
 
   @media screen and (min-width: 686px) {
     padding-right: 0;
@@ -12,6 +13,7 @@
     min-width: 268px;
     width: 30%;
     margin-left: 1rem;
+    margin-bottom: 0;
 
     h4 {
       margin-top: 0;
@@ -68,7 +70,7 @@
     a {
       padding: 0 0 0 1rem;
       flex: 2;
-      font-weight: 500;      
+      font-weight: 500;
 
       @media screen and (min-width: 610px) {
         padding: 0 1rem;

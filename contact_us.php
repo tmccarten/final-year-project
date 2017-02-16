@@ -27,6 +27,30 @@ include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php');
       </div>
     </div>
 
+    <section class="contentblock">
+      <div class="site-wrapper">
+        <div class="flex-wrapper">
+          <div class="content">
+            <h3>Contact Us</h3>
+            <p><strong>We would love to hear from you!</strong></p>
+            <form class="contactform">
+
+            <label for="name">Name:</label>
+              <input type="text" name="name">
+            <label for="email">Email:</label>
+              <input type="email" name="email" placeholder="your@email.com">
+            <label for="message">Message:</label>
+                <textarea name="message"></textarea>
+                  <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/sidebar.php'); ?>
+
+        </div>
+      </div>
+    </section>
+
     <?php include ($_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php'); ?>
 
   </main>

@@ -1,9 +1,13 @@
 table {
   width: 100%;
-  margin-bottom: 4rem;
   font-size: 0.875rem;
   border-collapse: collapse;
   text-align: left;
+  margin-bottom: 2rem;
+}
+
+.content > table {
+  margin-bottom: 0;
 }
 
 .hidden-cell {

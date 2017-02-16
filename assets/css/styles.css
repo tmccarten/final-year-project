@@ -90,16 +90,14 @@ figcaption {
 	color: grey;
 }
 
-/* --- HEADER --- */
-
 .header-container {
 	position: fixed;
 	z-index: 1000;
 	top: 0;
-	width: 100%; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7101d+0,aa111c+100 */
-	background: #c7101d; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #c7101d 0%, #aa111c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7101d', endColorstr='#aa111c',GradientType=0 ); /* IE6-9 */
+	width: 100%;
+	background: #c7101d;
+	background: linear-gradient(to bottom, #c7101d 0%, #aa111c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7101d', endColorstr='#aa111c',GradientType=0 );
 	box-shadow: 0px 4px 3px -3px rgba(0, 0, 0, 0.3);
 }
 
@@ -128,10 +126,6 @@ header {
 	font-family: 'Raleway', 'arial', sans-serif;
 	font-weight: 500;
 }
-
-/* --- HEADER ENDS --- */
-
-/* -- NAVIGATION -- */
 
 .nav-container {
 	width: 100%;
@@ -227,8 +221,6 @@ nav ul li + * {
 	height: 4.3333333333333333333333333333333em;
 }
 
-/* -- NAVIGATION ENDS -- */
-
 .aside-container {
 	font-size: 0.875rem;
 	background-color: #e4e4e4;
@@ -236,6 +228,7 @@ nav ul li + * {
 	width: 100%;
 	min-height: 1px;
 	overflow: hidden;
+	margin-bottom: 2rem;
 }
 
 .aside-container h4 {
@@ -318,27 +311,60 @@ aside.info h4 {
 }
 
 .content {
-	display: -ms-flexbox;
-	display: flex;
 	width: 100%;
-	-ms-flex-direction: column;
-	flex-direction: column;
 	line-height: 1.4;
 	text-align: left;
 	margin-bottom: 2rem;
+}
+
+.content h3 + p {
+	margin-top: 0;
+}
+
+.content p:last-child {
+	margin-bottom: 0;
+}
+
+.content li {
+	padding: 0.25em 0;
 }
 
 .content ul {
 	padding: 0 1em;
 }
 
-.content li {
-	padding: 0.5em 0;
-}
-
 .content h3 {
 	margin: 0;
 	padding: 0 0 0.875em 0;
+}
+
+.contactform {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+.contactform input,
+.contactform textarea,
+.contactform button {
+	border: none;
+	background: #f0f0f0;
+	padding: 1rem;
+	margin: 0 0 1rem 0;
+}
+
+.contactform textarea {
+	min-height: 10rem;
+}
+
+.contactform button {
+	cursor: pointer;
+}
+
+.contactform button:hover {
+	background: #d0d0d0;
 }
 
 .contentblock.hero {
@@ -453,10 +479,10 @@ aside.info h4 {
 }
 
 .button.member {
-	border: none; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7101d+0,7c0c13+100 */
-	background: #c7101d; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #c7101d 0%, #7c0c13 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7101d', endColorstr='#7c0c13',GradientType=0 ); /* IE6-9 */ /* margin-bottom: 0; */
+	border: none;
+	background: #c7101d;
+	background: linear-gradient(to bottom, #c7101d 0%, #7c0c13 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7101d', endColorstr='#7c0c13',GradientType=0 );
 }
 
 .banner-buttons-container {
@@ -652,10 +678,14 @@ aside.info h4 {
 
 table {
 	width: 100%;
-	margin-bottom: 4rem;
 	font-size: 0.875rem;
 	border-collapse: collapse;
 	text-align: left;
+	margin-bottom: 2rem;
+}
+
+.content > table {
+	margin-bottom: 0;
 }
 
 .hidden-cell {
@@ -891,6 +921,7 @@ aside.latestnews {
 	min-width: 268px;
 	width: 30%;
 	margin-left: 1rem;
+	margin-bottom: 0;
 }
 
 .aside-container h4 {
@@ -1155,10 +1186,6 @@ footer {
 
 .item:nth-child(4n+1) {
 	margin-left: 0;
-}
-
-.item:hover {
-	transform: scale(1.1);
 }
 
 .item + * {

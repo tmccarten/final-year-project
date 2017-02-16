@@ -1,0 +1,25 @@
+.contactform {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  & input, & textarea, & button {
+    border: none;
+    background: #f0f0f0;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+  }
+
+  textarea {
+    min-height: 10rem;
+  }
+
+  button {
+    cursor: pointer;
+
+    &:hover {
+      background: #d0d0d0;
+    }
+  }
+
+}
